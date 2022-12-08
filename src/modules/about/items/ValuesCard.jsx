@@ -4,7 +4,15 @@ import React from 'react'
 const ValuesCard = ({ icon, title, description }) => {
   return (
     <Card>
-      <CardContent>
+      <CardContent
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          textAlign: "center",
+          gap: "20px"
+        }}
+      >
         {icon}
         <Typography>{title}</Typography>
         <Typography>{description}</Typography>

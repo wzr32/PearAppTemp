@@ -10,8 +10,19 @@ import {
 const TeamCard = ({ position, name, description }) => {
   return (
     <Card>
-      <CardContent>
-        <Avatar>A</Avatar>
+      <CardContent
+        sx={{
+          alignItems: "center",
+          display: "flex",
+          flexDirection: "column",
+          gap: "18px",
+        }}>
+        <Avatar
+          sx={{
+            height: "100px",
+            width: "100px"
+          }}
+        >A</Avatar>
         <Typography>{name}</Typography>
         <Typography>{position}</Typography>
         <Typography>{description}</Typography>

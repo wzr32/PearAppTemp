@@ -15,7 +15,6 @@ const AboutView = () => {
       <Hiring />
       <Team />
       <OurValues />
-      
     </>
   );
 };

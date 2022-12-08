@@ -1,10 +1,11 @@
-import { Grid, Typography } from '@mui/material'
-import React from 'react'
+import React from 'react';
+import { Box, Grid, Typography } from '@mui/material';
+import SVGHand from '../../../shared/assets/about_hand_hb.svg';
 
 const HeroBanner = () => {
   return (
-    <section>
-      <Grid container spacing={4}>
+    <Box component="section" sx={{ minHeight: "100vh" }}>
+      <Grid container spacing={4} alignItems="center">
         <Grid item md={8}>
           <Typography variant="h3">About Our Company</Typography>
           <Typography variant="body1" component="span">
@@ -15,10 +16,10 @@ const HeroBanner = () => {
           </Typography>
         </Grid>
         <Grid item md={4}>
-          hand image
+          <img src={SVGHand} alt="about_hand" />
         </Grid>
       </Grid>
-    </section>
+    </Box>
   )
 }
 
