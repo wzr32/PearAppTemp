@@ -12,7 +12,7 @@ const Join = () => {
         padding: "45px 0",
         background: GREY_BG_COLOR,
         marginBottom: "180px",
-        borderRadius: "40px"
+        borderRadius: "30px"
       }}
     >
         <Box>
@@ -26,13 +26,25 @@ const Join = () => {
                     </Box>
                 </Grid>
                 
-                <Grid xs={12} md={2}>
+                <Grid container md={3}>
+                  <Grid xs={6}>
                     <img src={SVGLogo} alt="logo" />
+                  </Grid>
+                  <Grid xs={6}>
                     <img src={SVGLogo} alt="logo" />
+                  </Grid>
+                  <Grid xs={6}>
                     <img src={SVGLogo} alt="logo" />
+                  </Grid>
+                  <Grid xs={6}>
                     <img src={SVGLogo} alt="logo" />
+                  </Grid>
+                  <Grid xs={6}>
                     <img src={SVGLogo} alt="logo" />
+                  </Grid>
+                  <Grid xs={6}>
                     <img src={SVGLogo} alt="logo" />
+                  </Grid>
                 </Grid>
             </Grid>
         </Box>
