@@ -9,7 +9,7 @@ const HeroBannerFilters = () => {
       <Grid container spacing={4} alignItems="center">
         <Grid item md={8}>
           <Typography variant="h3" textAlign="center" color={LIGHT_GREEN_COLOR}>Welcome to Pear</Typography>
-          <Typography variant="body1" component="span" display="flex" justifyContent="center" textAlign="center" margin={"1rem auto 0 auto"} width="560px" >
+          <Typography variant="body1" component="span" display="flex" justifyContent="center" textAlign="center" margin={"1rem auto 0 auto"} maxWidth="560px" >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venenatis in quam lectus non euismod lacus tortor, viverra pharetra. Morbi morbi egestas morbi pharetra tempor, eget pellentesque posuere. Nulla faucibus faucibus mauris aliquet feugiat. Pellentesque adipiscing nulla ipsum 
           </Typography>
         </Grid>

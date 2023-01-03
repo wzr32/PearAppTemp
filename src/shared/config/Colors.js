@@ -3,4 +3,4 @@ export const MEDIUM_GREEN_COLOR = "#134b45";
 export const DARK_GREEN_COLOR = "#013d37";
 
 export const WHITE_BG_COLOR = "#FFFFFF";
-export const GREY_BG_COLOR = "#F8F8F8";
+export const GREY_BG_COLOR = "#F2F2F2";

@@ -20,7 +20,7 @@ const Subscribe = () => {
                     borderRadius: "30px",
                     margin: "1.5rem auto 0 auto",
                     textAlign: "center",
-                    width: "500px",
+                    maxWidth: "500px",
                 }}>
         
                     <Typography color={WHITE_BG_COLOR} sx={{ margin: ".5rem 0" }} >Lorem ipsum dolor sit amet consectetur. Ac nec erat augue id enim ut. Duis ipsum 
