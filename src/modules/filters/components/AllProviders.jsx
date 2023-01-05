@@ -9,7 +9,7 @@ const AllProviders = () => {
       component="section"
       sx={{
         margin: "4rem 0 2rem 0",
-        padding: "45px 0",
+        padding: "45px",
         background: GREY_BG_COLOR,
         borderRadius: "30px"
       }}
@@ -17,7 +17,7 @@ const AllProviders = () => {
         <Box>
             <Grid item md={8}>
                     <Typography variant='h5' color={MEDIUM_GREEN_COLOR} textAlign="center">Do you want to seeall Providers?</Typography>
-                    <Typography variant="body1" component="span" display="flex" justifyContent="center" textAlign="center" margin={"1rem auto 0 auto"} width="800px">
+                    <Typography variant="body1" component="span" display="flex" justifyContent="center" textAlign="center" margin={"1rem auto 0 auto"} maxWidth="800px">
                     Lorem ipsum dolor sit amet consectetur. Nam leo urna enim velit at sit dui. 
                     </Typography>
             </Grid>
@@ -25,7 +25,7 @@ const AllProviders = () => {
                 <Box sx={{ display: "flex", justifyContent: "center", margin: "2rem 0 1rem 0" }}>
                     <GreenButton>Get Started</GreenButton>
                 </Box>
-                <Typography variant="body2" component="span" display="flex" justifyContent="center" textAlign="center" margin={"1rem auto 0 auto"} width="800px">
+                <Typography variant="body2" component="span" display="flex" justifyContent="center" textAlign="center" margin={"1rem auto 0 auto"} maxWidth="800px">
                     Lorem ipsum dolor sit amet consectetur.
                 </Typography>
             </Grid>
