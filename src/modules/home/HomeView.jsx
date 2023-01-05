@@ -1,6 +1,6 @@
 import React from 'react';
 import HeroBannerLanding from './components/HeroBannerLanding';
-import AboutContent from './components/AboutContent';
+import GoodbyeConflicts from './components/AboutContent';
 import AboutContentTwo from './components/AboutContentTwo';
 import Unleash from './components/Unleash';
 import Join from './components/Join';
@@ -10,7 +10,7 @@ const HomeView = () => {
   return (
     <>
       <HeroBannerLanding />
-      <AboutContent />
+      <GoodbyeConflicts />
       <AboutContentTwo />
       <Unleash />
       <Join />

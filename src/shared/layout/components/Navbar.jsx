@@ -8,15 +8,15 @@ import {
   Container,
 } from '@mui/material';
 import { Menu as MenuIcon } from '@mui/icons-material';
-import { DARK_GREEN_COLOR } from '../../config/Colors';
+import { DARK_GREEN_COLOR, GREY_BG_COLOR } from '../../config/Colors';
 import { GreenButton } from '../../components/buttons/CustomButtons';
 
 const Navbar = () => {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" sx={{ background: DARK_GREEN_COLOR }}>
+      <AppBar position="static" sx={{ background: GREY_BG_COLOR }}>
         <Container>
-          <Toolbar sx={{ background: DARK_GREEN_COLOR }}>
+          <Toolbar sx={{ background: GREY_BG_COLOR, color: DARK_GREEN_COLOR, fontWeight: 'bold' }}>
             <IconButton
               size="large"
               edge="start"
