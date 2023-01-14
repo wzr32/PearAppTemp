@@ -11,7 +11,7 @@ const HeroBannerLanding = () => {
         <Grid item md={8}>
           <Typography variant="h3" textAlign="center" color={LIGHT_GREEN_COLOR}>Welcome to Pear</Typography>
           <Typography variant="h5" textAlign="center" color={DARK_GREEN_COLOR}>Investement? Try Pear first</Typography>
-          <Typography variant="body1" component="span" display="flex" justifyContent="center" textAlign="center" margin={"1rem 0 0 0"}>
+          <Typography variant="body1" maxWidth="400px" component="span" display="flex" justifyContent="center" textAlign="center" margin={"1rem auto 0 auto"} >
             We help you choose the investment provider that resonates with YOU
           </Typography>
           

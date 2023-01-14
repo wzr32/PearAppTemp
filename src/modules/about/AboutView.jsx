@@ -1,5 +1,4 @@
 import React from 'react';
-import Banner from './components/Banner';
 import HeroBanner from './components/HeroBanner';
 import Hiring from './components/Hiring';
 import OurValues from './components/OurValues';
@@ -10,7 +9,6 @@ const AboutView = () => {
   return (
     <>
       <HeroBanner />
-      <Banner />
       <Unleash />
       <Hiring />
       <Team />

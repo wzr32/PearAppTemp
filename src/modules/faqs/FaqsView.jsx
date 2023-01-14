@@ -5,6 +5,7 @@ import BannerFAQS from './components/BannerFAQS';
 import HaveQuestions from './components/HaveQuestions';
 import QuestionsGrid from './components/QuestionsGrid';
 import WhatIsPear from './components/WhatIsPear';
+import TransparentPlataform from './components/TransparentPlataform';
 
 const FaqsView = () => {
   return (
@@ -13,7 +14,7 @@ const FaqsView = () => {
       <QuestionsGrid />
       <HaveQuestions />
       <WhatIsPear />
-      <WhatIsPear />
+      <TransparentPlataform />
       <Newsletter />
     </Box>
   );
