@@ -5,6 +5,7 @@ import AboutContentTwo from './components/AboutContentTwo';
 import Unleash from './components/Unleash';
 import Join from './components/Join';
 import Subscribe from './components/Subscribe'
+import HowToStart from './components/HowToStart';
 
 const HomeView = () => {
   return (
@@ -12,6 +13,7 @@ const HomeView = () => {
       <HeroBannerLanding />
       <GoodbyeConflicts />
       <AboutContentTwo />
+      <HowToStart />
       <Unleash />
       <Join />
       <Subscribe />
