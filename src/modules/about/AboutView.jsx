@@ -10,7 +10,6 @@ const AboutView = () => {
   return (
     <>
       <HeroBanner />
-      <Banner />
       <Unleash />
       <Hiring />
       <Team />

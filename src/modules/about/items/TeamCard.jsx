@@ -6,10 +6,11 @@ import {
   CardContent, 
   Typography 
 } from '@mui/material';
+import { GREY_BG_COLOR } from '../../../shared/config/Colors';
 
 const TeamCard = ({ position, name, description }) => {
   return (
-    <Card>
+    <Card sx={{ background: GREY_BG_COLOR }}>
       <CardContent
         sx={{
           alignItems: "center",
