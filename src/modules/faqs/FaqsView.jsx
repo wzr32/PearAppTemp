@@ -3,8 +3,9 @@ import React from 'react';
 import Newsletter from '../../shared/components/newsletter/Newsletter';
 import BannerFAQS from './components/BannerFAQS';
 import HaveQuestions from './components/HaveQuestions';
+import PlatformThatSuit from './components/PlatformThatSuit';
 import QuestionsGrid from './components/QuestionsGrid';
-import WhatIsPear from './components/WhatIsPear';
+import TransparentPlatform from './components/TransparentPlatform';
 
 const FaqsView = () => {
   return (
@@ -12,8 +13,8 @@ const FaqsView = () => {
       <BannerFAQS />
       <QuestionsGrid />
       <HaveQuestions />
-      <WhatIsPear />
-      <WhatIsPear />
+      <PlatformThatSuit />
+      <TransparentPlatform />
       <Newsletter />
     </Box>
   );

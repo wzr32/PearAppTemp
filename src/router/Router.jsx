@@ -6,6 +6,7 @@ import AboutView from '../modules/about/AboutView';
 import FaqsView from '../modules/faqs/FaqsView';
 import FiltersView from '../modules/filters/FiltersView';
 import ProvidersView from '../modules/providers/ProvidersView';
+import NotFoundView from '../modules/notFound/NotFoundView';
 
 const Router = () => {
   return (
@@ -16,6 +17,7 @@ const Router = () => {
         <Route element={<FaqsView />} path="/faqs" />
         <Route element={<FiltersView />} path="/filters" />
         <Route element={<ProvidersView />} path="/providers" />
+        <Route element={<NotFoundView />} path="*" />
       </Route>
     </Routes>  
   );

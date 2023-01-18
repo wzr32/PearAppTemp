@@ -1,13 +1,14 @@
 import React from 'react';
 import {
   Box,
-  Button,
   Container,
   Grid,
   Typography
 } from '@mui/material';
-import { DARK_GREEN_COLOR, MEDIUM_GREEN_COLOR } from '../../config/Colors';
-import { GreenButton, WhiteButton } from '../../components/buttons/CustomButtons';
+import { Instagram as InstagramIcon } from '@mui/icons-material';
+import { NavLink } from 'react-router-dom';
+import { MEDIUM_GREEN_COLOR } from '../../config/Colors';
+import SVGLogo from '../../../shared/assets/logo_white.svg';
 
 const Footer = () => {
   return (
@@ -15,43 +16,47 @@ const Footer = () => {
       <Box
         component="div"
         sx={{
-          background: DARK_GREEN_COLOR,
-          color: "#fff",
-          padding: "50px 115px",
-        }}
-      >
-        <Container>
-          <Grid container spacing={3} justifyContent="center" alignItems="center">
-            <Grid item xs={12} md={6}>
-              <Typography align="center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo repellat culpa eligendi aliquid est itaque quidem, asperiores fugit omnis ea eius obcaecati neque debitis ullam atque laborum numquam quis soluta?
-              </Typography>
-            </Grid>
-            <Grid item xs={12} md={6}>
-              <Box sx={{ display: "flex", gap: "40px" }}>
-                <WhiteButton variant="contained">Example@mail.com</WhiteButton>
-                <GreenButton variant="contained">Get Started</GreenButton>
-              </Box>
-            </Grid>
-          </Grid>
-        </Container>
-      </Box>
-      <Box
-        component="div"
-        sx={{
           background: MEDIUM_GREEN_COLOR,
           color: "#fff",
-          padding: "71px 50px",
+          padding: {
+            xs: "20px",
+            md: "71px 50px"
+          },
         }}
       >
         <Container>
           <Grid container spacing={3}>
             <Grid item xs={12} md={6}>
-              <Typography>pear icon</Typography>
-              <Typography>lorem ipsum dolor sit amet.</Typography>
+              <img src={SVGLogo} alt="PearApp" width={100} />
+              <Typography>Our vision is to make all people the best place to live for them.</Typography>
             </Grid>
-            <Grid item xs={12} md={6}>
-              lorem list
+            <Grid container spacing={3} item xs={12} md={6}>
+              <Grid item xs={12} md={3}>
+                <Typography component="p">About</Typography>
+                <Typography component="p">About Us</Typography>
+                <Typography component="p">Features</Typography>
+                <Typography component="p">News & Blog</Typography>
+              </Grid>
+              <Grid item xs={12} md={3}>
+                <Typography component="p">Company</Typography>
+                <Typography component="p">How We Work</Typography>
+                <Typography component="p">Capital</Typography>
+                <Typography component="p">Security</Typography>
+              </Grid>
+              <Grid item xs={12} md={3}>
+                <Typography component="p">Suport</Typography>
+                <Typography component="p">FAQs</Typography>
+                <Typography component="p">Support Center</Typography>
+                <Typography component="p">Contact Us</Typography>
+              </Grid>
+              <Grid item xs={12} md={3}>
+                <Typography component="p">Follow Us</Typography>
+                <Box>
+                  <InstagramIcon />
+                  <InstagramIcon />
+                  <InstagramIcon />
+                </Box>
+              </Grid>
             </Grid>
           </Grid>
 
@@ -60,7 +65,26 @@ const Footer = () => {
               &copy; PearApp 2022 All Rights Reserved
             </Grid>
             <Grid item xs={12} md={6}>
-              social networks icons
+              <Box
+                sx={{
+                  display: 'flex',
+                  gap: '1em',
+                  justifyContent: 'end'
+                }}
+              >
+                <NavLink
+                  to=""
+                  className={({ isActive }) =>
+                    isActive ? "footerLinksActive" : "footerLinksNonActive"
+                  }
+                >Terms & agreement</NavLink>
+                <NavLink
+                  to=""
+                  className={({ isActive }) =>
+                    isActive ? "footerLinksActive" : "footerLinksNonActive"
+                  }
+                >Privacy Policy</NavLink>
+              </Box>
             </Grid>
           </Grid>
         </Container>
