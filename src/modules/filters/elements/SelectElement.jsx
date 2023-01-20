@@ -3,7 +3,11 @@ import { Card, CardContent } from '@mui/material';
 
 const SelectElement = ({ isSelected }) => {
   return (
-    <div>SelectElement</div>
+    <Card>
+      <CardContent>
+        SelectElement
+      </CardContent>
+    </Card>
   )
 }
 

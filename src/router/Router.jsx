@@ -5,6 +5,11 @@ import HomeView from '../modules/home/HomeView';
 import AboutView from '../modules/about/AboutView';
 import FaqsView from '../modules/faqs/FaqsView';
 import FiltersView from '../modules/filters/FiltersView';
+
+
+import FiltersView4 from '../modules/filters/FiltersView4';
+
+
 import ProvidersView from '../modules/providers/ProvidersView';
 import NotFoundView from '../modules/notFound/NotFoundView';
 
@@ -15,7 +20,12 @@ const Router = () => {
         <Route element={<HomeView />} path="/" />
         <Route element={<AboutView />} path="/about-us" />
         <Route element={<FaqsView />} path="/faqs" />
-        <Route element={<FiltersView />} path="/filters" />
+        {/* <Route element={<FiltersView />} path="/filters" /> */}
+
+
+        <Route element={<FiltersView4 />} path="/filters" />
+        
+        
         <Route element={<ProvidersView />} path="/providers" />
         <Route element={<NotFoundView />} path="*" />
       </Route>
