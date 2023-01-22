@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box, Checkbox, FormGroup, FormControlLabel, Grid, MenuItem, Select, TextField, Container } from '@mui/material';
 import { GreenButton } from '../../../shared/components/buttons/CustomButtons';
+import SVGLanding from '../../../shared/assets/Landing_Form.svg';
 
 const StartForm = () => {
   return (
@@ -77,7 +78,7 @@ const StartForm = () => {
             </Grid>
           </Grid>
           <Grid item xs={12} md={5}>
-            image
+            <img src={SVGLanding} alt="Phones" />
           </Grid>
         </Grid>
       </Container>
