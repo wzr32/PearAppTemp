@@ -4,7 +4,7 @@ import { GreenButton } from '../../../shared/components/buttons/CustomButtons';
 
 const CardCarousel = () => {
   return (
-    <Card sx={{ margin: '0 1em' }}>
+    <Card sx={{ margin: '0 1em', borderRadius: '20px' }}>
       <CardContent>
         <Box
           sx={{

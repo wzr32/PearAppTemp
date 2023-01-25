@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Grid, Typography, Container } from '@mui/material';
-import SVGPhone from '../../../shared/assets/Subscribe.svg';
+import SVGPhone from '../../../shared/assets/Landing_Form.svg';
 import { WhiteButton, GreenButton } from "../../../shared/components/buttons/CustomButtons";
 import { DARK_GREEN_COLOR, GREY_BG_COLOR, WHITE_BG_COLOR } from '../../../shared/config/Colors';
 
