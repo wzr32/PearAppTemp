@@ -9,13 +9,13 @@ const QuestionCard = () => {
         background: GREY_BG_COLOR,
         color: DARK_GREEN_COLOR,
         padding: "40px",
-        borderRadius: "25px",
+        borderRadius: "20px",
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
         gap: "16px",
-        textAlign: "center",
+        textAlign: "center"
       }}>
         <Typography>icon</Typography>
         <Typography>how many peoples are using pear?"</Typography>

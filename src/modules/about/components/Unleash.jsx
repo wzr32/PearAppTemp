@@ -1,46 +1,37 @@
 import React from 'react';
-import { 
-  Box,
-  Container,
-  Grid,
-  Typography
-} from '@mui/material';
+import { Box, Container, Grid, Typography } from '@mui/material';
+import { LIGHT_GREEN_COLOR, MEDIUM_GREEN_COLOR } from '../../../shared/config/Colors';
 
 const Unleash = () => {
   return (
-    <Box component="section" sx={{ margin: "160px 0", textAlign: "center" }}>
-      <Container>
+    <Box component="section" sx={{ margin: "0 0 10rem 0", textAlign: "center" }}>
+      <Typography variant="h3" color={MEDIUM_GREEN_COLOR}>
+        Unleash The Full Power Of Data
+      </Typography>
 
-        <Typography variant="h3" component="h2">
-          Unleash The Full Power Of Data
-        </Typography>
+      <Typography variant="body1" component="span" display="flex" justifyContent="center" textAlign="center" maxWidth="880px" margin={"2rem auto 3rem auto"}>
+        Lorem ipsum dolor sit amet consectetur. Gravida facilisis sollicitudin risus eu 
+        consectetur nibh eu eu. Tellus vitae aliquet sem etiam. Bibendum ut faucibus 
+        dignissim ultrices nunc. Netus senectus pulvinar facilisis 
+        non eu risus odio sit.
+      </Typography>
 
-        <Typography variant="body2" sx={{ margin: "75px 0" }}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Perspiciatis, quam possimus veritatis fuga non labore dolore! Ipsam et modi accusamus odit ad, iusto aspernatur minima saepe omnis. 
-          Pariatur, asperiores sint.
-        </Typography>
-
-        <Box>
-          <Grid container justifyContent="space-between">
-            <Grid item xs={12} md={4}>
-              <Typography textAlign="center">400+</Typography>
-              <Typography textAlign="center">Projects completed</Typography>
-            </Grid>
-            <Grid item xs={12} md={4}>
-              <Typography textAlign="center">600%</Typography>
-              <Typography textAlign="center">Projects completed</Typography>
-            </Grid>
-            <Grid item xs={12} md={4}>
-              <Typography textAlign="center">10K</Typography>
-              <Typography textAlign="center">Projects completed</Typography>
-            </Grid>
+      <Box>
+        <Grid container justifyContent="space-between">
+          <Grid item xs={12} md={4}>
+            <Typography variant='h3' color={LIGHT_GREEN_COLOR}>400+</Typography>
+            <Typography>Projects completed</Typography>
           </Grid>
-        </Box>
-        <Box component="div" sx={{ marginTop: "200px" }}>
-          pear icon gallery
-        </Box>
-      </Container>
+          <Grid item xs={12} md={4}>
+            <Typography variant='h3' color={LIGHT_GREEN_COLOR}>600%</Typography>
+            <Typography>Projects completed</Typography>
+          </Grid>
+          <Grid item xs={12} md={4}>
+            <Typography variant='h3' color={LIGHT_GREEN_COLOR}>10K</Typography>
+            <Typography>Projects completed</Typography>
+          </Grid>
+        </Grid>
+      </Box>
     </Box>
   );
 };

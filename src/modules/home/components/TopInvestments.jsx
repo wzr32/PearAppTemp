@@ -2,6 +2,7 @@ import React from 'react';
 import { Box, Container, Typography } from '@mui/material';
 import Slider from 'react-slick';
 import SVGLoremPlace from '../../../shared/assets/lorem_placeholder.svg';
+import { DARK_GREEN_COLOR, MEDIUM_GREEN_COLOR, WHITE_BG_COLOR, LIGHT_GREEN_COLOR } from '../../../shared/config/Colors';
 
 const TopInvestments = () => {
   const settings = {
@@ -38,12 +39,10 @@ const TopInvestments = () => {
   return (
     <Box component="section" sx={{ padding: '50px 0' }}>
       <Container>
-        <Typography>
-          Top Investments
-        </Typography>
-        <Typography>
-          Get started and learn to pear with these tutorials
-        </Typography>
+        
+      <Typography variant="h3" textAlign="center" color={DARK_GREEN_COLOR}>Top Investments</Typography>
+      <Typography variant="h5" textAlign="center" color={DARK_GREEN_COLOR} margin={".5rem auto 1rem auto"}>Get started and learn to pear with these tutorials</Typography>
+
         <Slider {...settings}>
           {[...new Array(5)].map((_, index) => (
             <Box component="div" key={`top-investments__${index}`}>

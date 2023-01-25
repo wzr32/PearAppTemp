@@ -3,6 +3,8 @@ import { Box, Container, Typography } from '@mui/material';
 import Slider from 'react-slick';
 import CardCarousel from '../elements/CardCarousel';
 import { GREY_BG_COLOR } from '../../../shared/config/Colors';
+import { DARK_GREEN_COLOR, MEDIUM_GREEN_COLOR, WHITE_BG_COLOR, LIGHT_GREEN_COLOR } from '../../../shared/config/Colors';
+
 
 const settings = {
   dots: true,
@@ -39,8 +41,10 @@ const HowToStart = () => {
   return (
     <Box component="section" sx={{ background: GREY_BG_COLOR, padding: '50px 40px' }}>
       <Container>
-        <Typography>How to Start</Typography>
-        <Typography>Lorem ipsum dolor sit amet, consectetur </Typography>
+        
+        <Typography variant="h3" textAlign="center" color={DARK_GREEN_COLOR} >How to Start</Typography>
+        <Typography variant="h5" textAlign="center" color={DARK_GREEN_COLOR} margin={"0 auto 1rem auto"}>Lorem ipsum dolor sit amet, consectetur</Typography>
+
         <div>
           <Slider {...settings}>
             {[...new Array(5)].map((_, index) => (
