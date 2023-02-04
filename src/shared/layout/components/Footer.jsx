@@ -73,16 +73,18 @@ const Footer = () => {
                 }}
               >
                 <NavLink
-                  to=""
-                  className={({ isActive }) =>
-                    isActive ? "footerLinksActive" : "footerLinksNonActive"
-                  }
+                  to="/terms-and-conditions"
+                  style={{
+                    textDecoration: "underline",
+                    color: "#fff"
+                  }}
                 >Terms & agreement</NavLink>
                 <NavLink
-                  to=""
-                  className={({ isActive }) =>
-                    isActive ? "footerLinksActive" : "footerLinksNonActive"
-                  }
+                  to="/privacy-politics"
+                  style={{
+                    textDecoration: "underline",
+                    color: "#fff"
+                  }}
                 >Privacy Policy</NavLink>
               </Box>
             </Grid>

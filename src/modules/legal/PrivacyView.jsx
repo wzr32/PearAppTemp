@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Container, Typography } from '@mui/material';
 
-const Privacy = () => {
+const PrivacyView = () => {
   return (
     <Box component="section">
       <Container>
@@ -125,4 +125,4 @@ const Privacy = () => {
   )
 }
 
-export default Privacy;
+export default PrivacyView;

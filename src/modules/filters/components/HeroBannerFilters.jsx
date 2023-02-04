@@ -1,11 +1,18 @@
 import React from 'react';
 import { Box, Container, Grid, Typography } from '@mui/material';
 import SVGPhone from '../../../shared/assets/Phone.svg';
-import { DARK_GREEN_COLOR, MEDIUM_GREEN_COLOR, WHITE_BG_COLOR, LIGHT_GREEN_COLOR } from '../../../shared/config/Colors';
+import { LIGHT_GREEN_COLOR } from '../../../shared/config/Colors';
 
 const HeroBannerFilters = () => {
   return (
-    <Box component="section" sx={{ minHeight: "100vh", marginTop:"4rem"}}>
+    <Box
+      component="section"
+      sx={{
+        margin:"247px 0",
+        display: "flex",
+        placeItems: "center"
+      }}
+    >
       <Container>
         <Grid container spacing={4} alignItems="center">
           <Grid item md={8}>
