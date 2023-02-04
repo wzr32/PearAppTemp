@@ -1,7 +1,8 @@
-import React from 'react';
-import { Box, Container, Typography } from '@mui/material';
-import { GreenButton } from '../../../../shared/components/buttons/CustomButtons';
-import { GREY_BG_COLOR } from '../../../../shared/config/Colors';
+import React from "react";
+import { Box, Container, Typography } from "@mui/material";
+import { GreenButton } from "../../../shared/components/buttons/CustomButtons";
+import { GREY_BG_COLOR } from "../../../shared/config/Colors";
+import { NavLink } from "react-router-dom";
 
 const SeeAllProviders = () => {
   return (
@@ -23,7 +24,14 @@ const SeeAllProviders = () => {
         >
           <Typography>Do you want to see all Providers?</Typography>
           <Typography>Lorem ipsum lorem ipsum lorem ipsum</Typography>
-          <GreenButton>All Providers</GreenButton>
+          <GreenButton>
+            <NavLink
+              to="/brokers"
+              style={{ color: "#fff", textDecoration: "none" }}
+            >
+              All Providers
+            </NavLink>
+          </GreenButton>
           <Typography></Typography>
         </Box>
       </Container>

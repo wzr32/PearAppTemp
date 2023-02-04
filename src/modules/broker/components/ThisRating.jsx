@@ -1,10 +1,8 @@
-import React, { useState } from 'react';
+import React from "react";
 import { Box, Rating, Typography } from "@mui/material";
-import { DARK_GREEN_COLOR, GREY_BG_COLOR } from '../../../../shared/config/Colors';
+import { DARK_GREEN_COLOR, GREY_BG_COLOR } from "../../../shared/config/Colors";
 
-const ThisRating = () => {
-  const [value, setValue] = useState(2);
-
+const ThisRating = ({ credibility, cvs, reviews, quality, price }) => {
   return (
     <Box>
       <Box>
@@ -31,17 +29,11 @@ const ThisRating = () => {
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
-            height: "40px"
+            height: "40px",
           }}
         >
           <Typography fontWeight="bold">Credibility</Typography>
-          <Rating
-            name="simple-controlled"
-            value={value}
-            onChange={(_, newValue) => {
-              setValue(newValue);
-            }}
-          />
+          <Rating name="simple-controlled" value={credibility} />
         </Box>
 
         <Box
@@ -49,17 +41,11 @@ const ThisRating = () => {
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
-            height: "40px"
+            height: "40px",
           }}
         >
           <Typography fontWeight="bold">CVs</Typography>
-          <Rating
-            name="simple-controlled"
-            value={value}
-            onChange={(_, newValue) => {
-              setValue(newValue);
-            }}
-          />
+          <Rating name="simple-controlled" value={cvs} />
         </Box>
 
         <Box
@@ -67,17 +53,11 @@ const ThisRating = () => {
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
-            height: "40px"
+            height: "40px",
           }}
         >
           <Typography fontWeight="bold">Reviews</Typography>
-          <Rating
-            name="simple-controlled"
-            value={value}
-            onChange={(_, newValue) => {
-              setValue(newValue);
-            }}
-          />
+          <Rating name="simple-controlled" value={reviews} />
         </Box>
 
         <Box
@@ -85,17 +65,11 @@ const ThisRating = () => {
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
-            height: "40px"
+            height: "40px",
           }}
         >
           <Typography fontWeight="bold">Quality of content:</Typography>
-          <Rating
-            name="simple-controlled"
-            value={value}
-            onChange={(_, newValue) => {
-              setValue(newValue);
-            }}
-          />
+          <Rating name="simple-controlled" value={quality} />
         </Box>
 
         <Box
@@ -103,17 +77,11 @@ const ThisRating = () => {
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
-            height: "40px"
+            height: "40px",
           }}
         >
           <Typography fontWeight="bold">Price</Typography>
-          <Rating
-            name="simple-controlled"
-            value={value}
-            onChange={(_, newValue) => {
-              setValue(newValue);
-            }}
-          />
+          <Rating name="simple-controlled" value={price} />
         </Box>
       </Box>
     </Box>

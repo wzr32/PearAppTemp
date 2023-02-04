@@ -1,6 +1,6 @@
-import { Box, Container, Typography } from '@mui/material';
-import React from 'react';
-import { DARK_GREEN_COLOR, GREY_BG_COLOR } from '../../../../shared/config/Colors';
+import { Box, Container, Typography } from "@mui/material";
+import React from "react";
+import { DARK_GREEN_COLOR, GREY_BG_COLOR } from "../../../shared/config/Colors";
 
 const MainData = () => {
   return (
@@ -17,7 +17,7 @@ const MainData = () => {
           sx={{
             display: "flex",
             justifyContent: "space-between",
-            color: DARK_GREEN_COLOR
+            color: DARK_GREEN_COLOR,
           }}
         >
           <Typography fontWeight="bold">Main Educator</Typography>
@@ -27,7 +27,7 @@ const MainData = () => {
           sx={{
             display: "flex",
             justifyContent: "space-between",
-            color: DARK_GREEN_COLOR
+            color: DARK_GREEN_COLOR,
           }}
         >
           <Typography fontWeight="bold">Level</Typography>
@@ -47,11 +47,13 @@ const MainData = () => {
           sx={{
             display: "flex",
             justifyContent: "space-between",
-            color: DARK_GREEN_COLOR
+            color: DARK_GREEN_COLOR,
           }}
         >
           <Typography fontWeight="bold">Format</Typography>
-          <Typography fontWeight="bold">Online, pre-recorded & presential 1-2-1 mentoring</Typography>
+          <Typography fontWeight="bold">
+            Online, pre-recorded & presential 1-2-1 mentoring
+          </Typography>
         </Box>
       </Box>
 
@@ -67,7 +69,7 @@ const MainData = () => {
           sx={{
             display: "flex",
             justifyContent: "space-between",
-            color: DARK_GREEN_COLOR
+            color: DARK_GREEN_COLOR,
           }}
         >
           <Typography fontWeight="bold">Certification</Typography>
@@ -85,11 +87,20 @@ const MainData = () => {
       >
         <Box
           sx={{
-            color: DARK_GREEN_COLOR
+            color: DARK_GREEN_COLOR,
           }}
         >
           <Typography fontWeight="bold">Summary</Typography>
-          <Typography>The Institute of Trading and Portfolio Management was established to educate, inform and coach retail traders & investors on how to take a more professional approach to Trading and Investing in the Financial Markets. They also manage a global portfolio and a community of retail traders and investors that support each other. They deliver their programmes via online video series as well as online mentoring. They also hold regular online events and presential mentoring programmes in exotic locations.</Typography>
+          <Typography>
+            The Institute of Trading and Portfolio Management was established to
+            educate, inform and coach retail traders & investors on how to take
+            a more professional approach to Trading and Investing in the
+            Financial Markets. They also manage a global portfolio and a
+            community of retail traders and investors that support each other.
+            They deliver their programmes via online video series as well as
+            online mentoring. They also hold regular online events and
+            presential mentoring programmes in exotic locations.
+          </Typography>
         </Box>
       </Box>
     </Box>

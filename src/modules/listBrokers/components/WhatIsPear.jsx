@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   Box,
   Card,
@@ -7,9 +7,9 @@ import {
   Grid,
   TextField,
   Typography,
-} from '@mui/material';
-import { GreenButton } from '../../../../shared/components/buttons/CustomButtons';
-import { DARK_GREEN_COLOR } from '../../../../shared/config/Colors';
+} from "@mui/material";
+import { GreenButton } from "../../../shared/components/buttons/CustomButtons";
+import { DARK_GREEN_COLOR } from "../../../shared/config/Colors";
 
 const WhatIsPear = () => {
   return (
@@ -36,28 +36,33 @@ const WhatIsPear = () => {
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
-                gap: "45px"
+                gap: "45px",
               }}
             >
               <Typography>What is pear?</Typography>
               <Typography>Lorem ipsum dolor sit amet, consectetur</Typography>
-              <Typography>Lorem ipsum dolor sit amet consectetur. Elit facilisi sed lobortis suspendisse dignissim. Posuere ultrices fringilla sapien ac mattis enim sed. Vestibulum bibendum praesent tellus est tellus sem. Id non lectus ac sit. Vitae nulla in </Typography>
+              <Typography>
+                Lorem ipsum dolor sit amet consectetur. Elit facilisi sed
+                lobortis suspendisse dignissim. Posuere ultrices fringilla
+                sapien ac mattis enim sed. Vestibulum bibendum praesent tellus
+                est tellus sem. Id non lectus ac sit. Vitae nulla in{" "}
+              </Typography>
             </Grid>
-            <Grid item xs={12} md={6}>image</Grid>
+            <Grid item xs={12} md={6}>
+              image
+            </Grid>
           </Grid>
 
           <Grid container spacing={2}>
-            <Grid item xs={12} md={6}>image</Grid>
-            <Grid
-              item
-              xs={12}
-              md={6}
-            >
+            <Grid item xs={12} md={6}>
+              image
+            </Grid>
+            <Grid item xs={12} md={6}>
               <Card
                 sx={{
                   borderRadius: "30px",
                   background: DARK_GREEN_COLOR,
-                  color: "#fff"
+                  color: "#fff",
                 }}
               >
                 <CardContent
@@ -66,14 +71,16 @@ const WhatIsPear = () => {
                     flexDirection: "column",
                     alignItems: "center",
                     gap: "45px",
-                    textAlign: "center"
+                    textAlign: "center",
                   }}
                 >
                   <Typography>
-                    Lorem ipsum dolor sit amet consectetur. Ac nec erat augue id enim ut. Duis ipsum laoreet suspendisse scelerisque in risus habitant. Pellentesque tincidunt
+                    Lorem ipsum dolor sit amet consectetur. Ac nec erat augue id
+                    enim ut. Duis ipsum laoreet suspendisse scelerisque in risus
+                    habitant. Pellentesque tincidunt
                   </Typography>
                   <Box>
-                    <TextField placeholder='example@gmail.com' />
+                    <TextField placeholder="example@gmail.com" />
                     <GreenButton>Get Started</GreenButton>
                   </Box>
                 </CardContent>
