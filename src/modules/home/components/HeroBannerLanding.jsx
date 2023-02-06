@@ -10,9 +10,9 @@ const HeroBannerLanding = () => {
       <Box component="section" sx={{ minHeight: "100vh", marginTop:"4rem"}}>
         <Grid container spacing={4} alignItems="center">
           <Grid item md={8}>
-            <Typography variant="h3" textAlign="center" color={LIGHT_GREEN_COLOR}>Welcome to Pear</Typography>
-            <Typography variant="h5" textAlign="center" color={DARK_GREEN_COLOR}>Investement? Try Pear first</Typography>
-            <Typography variant="body1" maxWidth="400px" component="span" display="flex" justifyContent="center" textAlign="center" margin={"1rem auto 0 auto"} >
+            <Typography variant="h3" fontWeight="bold" textAlign="center" color={LIGHT_GREEN_COLOR}>Welcome to Pear</Typography>
+            <Typography variant="h5" fontWeight="bold" textAlign="center" color={DARK_GREEN_COLOR}>Investement? Try Pear first</Typography>
+            <Typography variant="body1" maxWidth="420px" component="span" display="flex" justifyContent="center" textAlign="center" margin={"1rem auto 0 auto"} >
               We help you choose the investment provider that resonates with YOU
             </Typography>
             

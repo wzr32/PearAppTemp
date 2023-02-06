@@ -17,8 +17,8 @@ const OurValues = () => {
             marginTop: "8rem",
           }}
         >
-          <Typography color={LIGHT_GREEN_COLOR} variant="body1" >Our Values</Typography>
-          <Typography color={DARK_GREEN_COLOR} variant="h3">How We Work At Untitled</Typography>
+          <Typography color={LIGHT_GREEN_COLOR} variant="body1" fontWeight="bold">Our Values</Typography>
+          <Typography color={DARK_GREEN_COLOR} variant="h3" fontWeight="bold" margin={"1rem 0"}>How We Work At Untitled</Typography>
           <Typography variant="h6" color={DARK_GREEN_COLOR}>Our Shared Guides for Lorem ipsum dolor sit amet</Typography>
         </Box>
         <Box

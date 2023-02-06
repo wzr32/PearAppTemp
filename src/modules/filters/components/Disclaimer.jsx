@@ -7,10 +7,11 @@ const Disclaimer = () => {
     <Box
       component="section"
       sx={{
-        margin: "2rem 0 0 0",
+        margin: "2rem auto 0 auto",
         padding: "45px",
         background: GREY_BG_COLOR,
-        borderRadius: "30px"
+        borderRadius: "30px",
+        maxWidth: "1200px"
       }}
     >
       <Container>

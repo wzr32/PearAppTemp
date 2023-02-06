@@ -14,9 +14,9 @@ const GoodbyeConflicts = () => {
             </Box>
           </Grid>
           <Grid item md={8}>
-            <Typography variant="h3" textAlign="center" color={LIGHT_GREEN_COLOR} maxWidth="400px" margin={"0 auto .5rem auto"}>Goodbye Conflicts of Interest</Typography>
-            <Typography variant="h5" textAlign="center" color={DARK_GREEN_COLOR}> Better Results </Typography>
-            <Typography variant="body1" component="span" display="flex" justifyContent="center" textAlign="center" maxWidth="370px" margin={"1rem auto 0 auto"}>
+            <Typography variant="h3" fontWeight="bold" textAlign="center" color={LIGHT_GREEN_COLOR} maxWidth="480px" margin={"0 auto .5rem auto"}>Goodbye Conflicts of Interest</Typography>
+            <Typography variant="h5" fontWeight="bold" textAlign="center" color={DARK_GREEN_COLOR}> Better Results </Typography>
+            <Typography variant="body1" component="span" display="flex" justifyContent="center" textAlign="center" maxWidth="420px" margin={"1rem auto 0 auto"}>
               Our proprietary algorithm will present you the results
               that best match your criteria, not the ones that will
               pay us more commission.

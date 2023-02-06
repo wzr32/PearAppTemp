@@ -8,8 +8,11 @@ const SeeAllProviders = () => {
   return (
     <Box
       sx={{
+        margin: "4rem auto 2rem auto",
+        padding: "45px",
         background: GREY_BG_COLOR,
-        padding: "58px 0",
+        borderRadius: "30px",
+        maxWidth: "1200px", 
       }}
     >
       <Container>
@@ -20,6 +23,7 @@ const SeeAllProviders = () => {
             alignItems: "center",
             justifyContent: "center",
             gap: "40px",
+            
           }}
         >
           <Typography>Do you want to see all Providers?</Typography>

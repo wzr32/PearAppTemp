@@ -18,8 +18,9 @@ const PlataformThatSuit = () => {
               variant="h3"
               textAlign="center"
               color={LIGHT_GREEN_COLOR}
-              maxWidth="460px"
+              maxWidth="520px"
               margin={"0 auto .5rem auto"}
+              fontWeight="bold"
             >
               Find a platform that suits you.
             </Typography>
@@ -27,6 +28,7 @@ const PlataformThatSuit = () => {
               variant="h5"
               textAlign="center"
               color={DARK_GREEN_COLOR}
+              fontWeight="bold"
             >
               Do not waste time.
             </Typography>

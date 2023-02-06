@@ -40,8 +40,8 @@ const TopInvestments = () => {
     <Box component="section" sx={{ padding: '50px 0' }}>
       <Container>
         
-      <Typography variant="h3" textAlign="center" color={DARK_GREEN_COLOR}>Top Investments</Typography>
-      <Typography variant="h5" textAlign="center" color={DARK_GREEN_COLOR} margin={".5rem auto 1rem auto"}>Get started and learn to pear with these tutorials</Typography>
+      <Typography variant="h4" fontWeight="bold" textAlign="center" color={DARK_GREEN_COLOR} margin={"0 0 1rem 0"} >Top Investments</Typography>
+      <Typography variant="h5" fontWeight="bold" textAlign="center" color={DARK_GREEN_COLOR} margin={".5rem auto 1rem auto"}>Get started and learn to pear with these tutorials</Typography>
 
         <Slider {...settings}>
           {[...new Array(5)].map((_, index) => (
