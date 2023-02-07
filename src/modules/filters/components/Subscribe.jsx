@@ -36,7 +36,7 @@ const Subscribe = () => {
             >
               <Typography
                 color={WHITE_BG_COLOR}
-                sx={{ margin: ".5rem 0 1.5rem 0", maxWidth: "550px" }}
+                sx={{ margin: ".5rem 0 1.5rem 0", maxWidth: "500px", textAlign: "center"}}
               >
                 Lorem ipsum dolor sit amet consectetur. Ac nec erat augue id
                 enim ut. Duis ipsum laoreet suspendisse scelerisque in risus

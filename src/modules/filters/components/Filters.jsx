@@ -7,6 +7,11 @@ import {
 } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import Api from "../../../shared/client/api-client";
+import {
+  DARK_GREEN_COLOR,
+  GREY_BG_COLOR,
+  WHITE_BG_COLOR,
+} from "../../../shared/config/Colors";
 
 const Filters = () => {
   const [open, setOpen] = useState(false);
@@ -47,6 +52,19 @@ const Filters = () => {
         loading={loading}
         renderInput={(params) => (
           <TextField
+            sx={{            
+              "& .MuiInputBase-root.MuiOutlinedInput-root": {
+                background: "#F4F4F4",
+                borderRadius: "4px",
+                color: DARK_GREEN_COLOR,
+                borderColor: "#F4F4F4 !important",
+                "&::placeholder": {
+                  color: DARK_GREEN_COLOR,
+                  fontWeight: "bold",
+                  textAlign: "center",
+                },
+              },
+            }}
             {...params}
             placeholder="Search"
             InputProps={{

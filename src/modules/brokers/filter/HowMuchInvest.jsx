@@ -18,7 +18,7 @@ const HowMuchInvest = () => {
 
   return (
     <Container>
-      <Typography variant="h5" textAlign="center" color={DARK_GREEN_COLOR} margin={"1.5rem 0"}>
+      <Typography variant="h5" fontWeight="bold" textAlign="center" color={DARK_GREEN_COLOR} margin={"1.5rem 0"}>
         Choose an amount to invest
       </Typography>
       <FormControl fullWidth>

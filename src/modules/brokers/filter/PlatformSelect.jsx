@@ -33,6 +33,7 @@ const PlatformSelect = () => {
           textAlign="center"
           color={DARK_GREEN_COLOR}
           margin={"1.5rem 0"}
+          fontWeight="bold"
         >
           What Type of Plataform You Select?
         </Typography>

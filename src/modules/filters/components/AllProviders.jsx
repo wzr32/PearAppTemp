@@ -25,6 +25,7 @@ const AllProviders = () => {
             variant="h5"
             color={MEDIUM_GREEN_COLOR}
             textAlign="center"
+            fontWeight="bold"
           >
             Do you want to seeall Providers?
           </Typography>
