@@ -12,10 +12,11 @@ const AllProviders = () => {
     <Box
       component="section"
       sx={{
-        margin: "4rem 0 2rem 0",
+        margin: "4rem auto 2rem auto",
         padding: "45px",
         background: GREY_BG_COLOR,
         borderRadius: "30px",
+        maxWidth: "1200px", 
       }}
     >
       <Box>

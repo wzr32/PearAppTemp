@@ -18,8 +18,8 @@ const Hiring = () => {
         margin: "8rem auto 8rem auto"
       }}
     >
-        <Typography variant="h4" color={MEDIUM_GREEN_COLOR} textAlign="center" margin="1rem 0">We’re Hiring!</Typography>
-        <Typography variant="h6" color={MEDIUM_GREEN_COLOR}>Meat Our Team</Typography>
+        <Typography variant="h4" fontWeight="bold" color={MEDIUM_GREEN_COLOR} textAlign="center" margin="1rem 0">We’re Hiring!</Typography>
+        <Typography variant="h6" fontWeight="bold" color={MEDIUM_GREEN_COLOR}>Meat Our Team</Typography>
         <Box sx={{ display: "flex", gap: "30px", justifyContent: "center", flexWrap: "wrap", margin: "28px 0" }}>
           <WhiteButton>About us</WhiteButton>
           <GreenButton>Open Positions</GreenButton>

@@ -1,11 +1,22 @@
-import React, { useEffect } from 'react';
-import { useForm } from 'react-hook-form';
-import { yupResolver } from '@hookform/resolvers/yup';
-import { Box, Checkbox, FormGroup, FormControlLabel, Grid, MenuItem, Select, TextField, Container, Button } from '@mui/material';
-import { GreenButton } from '../../../shared/components/buttons/CustomButtons';
-import { DARK_GREEN_COLOR } from '../../../shared/config/Colors';
-import { ContactSchema } from '../home.validatos';
-import SVGLanding from '../../../shared/assets/Landing_Form.svg';
+import React, { useEffect } from "react";
+import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+import {
+  Box,
+  Checkbox,
+  FormGroup,
+  FormControlLabel,
+  Grid,
+  MenuItem,
+  Select,
+  TextField,
+  Container,
+  Button,
+} from "@mui/material";
+import { GreenButton } from "../../../shared/components/buttons/CustomButtons";
+import { DARK_GREEN_COLOR } from "../../../shared/config/Colors";
+import { ContactSchema } from "../home.validatos";
+import SVGLanding from "../../../shared/assets/Landing_Form.svg";
 
 const inputStyles = {
   "& .MuiInputBase-root.MuiOutlinedInput-root": {
@@ -15,40 +26,43 @@ const inputStyles = {
     borderColor: "#FAFAFA !important",
     "&::placeholder": {
       color: DARK_GREEN_COLOR,
-      fontWeight: "bold"
+      fontWeight: "bold",
     },
-  }
+  },
 };
 
 const initialFormData = {
-  first_name: '',
-  last_name: '',
-  email: '',
-  message: '',
+  first_name: "",
+  last_name: "",
+  email: "",
+  message: "",
 };
 
 const StartForm = () => {
-
-  const { register, handleSubmit, formState: { errors } } = useForm({
-    mode: 'onBlur',
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({
+    mode: "onBlur",
     defaultValues: initialFormData,
-    reValidateMode: 'onChange',
+    reValidateMode: "onChange",
     resolver: yupResolver(ContactSchema),
   });
 
   const handleOnSubmit = handleSubmit((data) => {
-    console.log('submit data =>> ', data);
+    console.log("submit data =>> ", data);
   });
 
   useEffect(() => {
-    console.log('%cerrors', 'background: black; color: white;', errors);
+    console.log("%cerrors", "background: black; color: white;", errors);
   }, [errors]);
 
   return (
     <Box
       component="section"
       sx={{
-        padding: '2em 0',
+        padding: "2em 0",
       }}
     >
       <Container>
@@ -106,7 +120,7 @@ const StartForm = () => {
                     sx={{
                       background: "#fafafa",
                       marginTop: "4px",
-                      color: DARK_GREEN_COLOR
+                      color: DARK_GREEN_COLOR,
                     }}
                   >
                     <MenuItem value="10">Ten</MenuItem>
@@ -153,11 +167,7 @@ const StartForm = () => {
                 </FormGroup>
               </Grid>
               <Grid item xs={12}>
-                <GreenButton
-                  type="submit"
-                >
-                  Get Started
-                </GreenButton>
+                <GreenButton type="submit">Get Started</GreenButton>
               </Grid>
             </Grid>
             <Grid item xs={12} md={5}>

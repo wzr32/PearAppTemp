@@ -21,17 +21,19 @@ const BannerFAQS = () => {
               color={LIGHT_GREEN_COLOR}
               maxWidth="400px"
               margin={"0 auto .5rem auto"}
+              fontWeight="bold"
             >
               What is Pear?
             </Typography>
             <Typography
-              variant="body1"
+              variant="h6"
               component="span"
               display="flex"
               justifyContent="center"
               textAlign="center"
-              maxWidth="400px"
+              maxWidth="580px"
               margin={"1rem auto 0 auto"}
+              color={DARK_GREEN_COLOR}
             >
               Pear is a search tool that filters the best solutions for you,
               tailored to your needs, facilitating the choice of platform

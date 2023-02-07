@@ -13,6 +13,7 @@ import {
   DARK_GREEN_COLOR,
   LIGHT_GREEN_COLOR,
 } from "../../config/Colors";
+import { NavLink } from "react-router-dom";
 
 const Newsletter = () => {
   const theme = useTheme();
@@ -30,7 +31,7 @@ const Newsletter = () => {
           flexDirection: "column",
           alignItems: "center",
           gap: "14px",
-          padding: "8px",
+          padding: "20px",
         }}
       >
         <Typography
@@ -40,34 +41,31 @@ const Newsletter = () => {
         >
           Sign Up for our newlester
         </Typography>
-        <Typography>
+        <Typography color={DARK_GREEN_COLOR}>
           Be the first to know about relases and industry things
         </Typography>
-        <Box
-          sx={{
-            display: "inherit",
-            gap: "14px",
-            justifyContent: "center",
-            flexWrap: "wrap",
-          }}
-        >
+        <Box sx={{ display: "flex", justifyContent: "center", gap: "20px" }}>
           <TextField
-            margin="dense"
+            placeholder="example@mail.com"
             size="small"
-            placeholder="example@gmail.com"
             sx={{
-              display: {
-                xs: "block",
-                md: "inline-block",
+              "& input": {
+                textAlign: "center",
               },
-              width: {
-                xs: "100%",
-                md: "auto",
+              "& .MuiInputBase-root.MuiOutlinedInput-root": {
+                background: "#FFF",
+                borderRadius: "4px",
+                color: DARK_GREEN_COLOR,
+                borderColor: "#FFF !important",
+                "&::placeholder": {
+                  color: DARK_GREEN_COLOR,
+                  fontWeight: "bold",
+                  textAlign: "center",
+                },
               },
             }}
-            fullWidth={theme.breakpoints.down("md")}
           />
-          <GreenButton size="medium" variant="contained">
+          <GreenButton component={NavLink} to="/get-started">
             Get Started
           </GreenButton>
         </Box>

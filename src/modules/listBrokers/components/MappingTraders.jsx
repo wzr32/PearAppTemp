@@ -16,9 +16,12 @@ const MappingTraders = ({ brokers, handleCompare, toCompare }) => {
 
   const handleNavCompare = async () => {
     await saveCompare();
-    console.log(localStorage.getItem("compareItems"));
 
     navigate("/compare");
+  };
+
+  const handleChoose = (id) => {
+    navigate(`/broker/${id}`);
   };
 
   return (
@@ -46,6 +49,7 @@ const MappingTraders = ({ brokers, handleCompare, toCompare }) => {
                 <TraderCardDetail
                   broker={broker}
                   handleCompare={handleCompare}
+                  handleChoose={handleChoose}
                   toCompare={toCompare}
                 />
               </Grid>

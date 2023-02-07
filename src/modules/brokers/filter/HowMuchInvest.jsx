@@ -7,6 +7,7 @@ import {
   Select,
   Typography,
 } from "@mui/material";
+import { DARK_GREEN_COLOR, LIGHT_GREEN_COLOR } from '../../../shared/config/Colors';
 
 const HowMuchInvest = () => {
   const [value, setValue] = useState(0);
@@ -17,7 +18,7 @@ const HowMuchInvest = () => {
 
   return (
     <Container>
-      <Typography gutterBottom fontWeight="bold">
+      <Typography variant="h5" textAlign="center" color={DARK_GREEN_COLOR} margin={"1.5rem 0"}>
         Choose an amount to invest
       </Typography>
       <FormControl fullWidth>

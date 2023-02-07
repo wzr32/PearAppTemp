@@ -15,7 +15,7 @@ const HeroBanner = () => {
       component="section"
       sx={{
         minHeight: "calc(100vh - 65px)",
-        marginTop: "4rem",
+        marginTop: "2rem",
         display: "flex",
         placeItems: "center",
       }}
@@ -27,17 +27,20 @@ const HeroBanner = () => {
               variant="h3"
               textAlign="center"
               color={LIGHT_GREEN_COLOR}
+              fontWeight="bold"
             >
               About Our Company
             </Typography>
             <Typography
-              variant="body1"
+              variant="h6"
               component="span"
               display="flex"
               justifyContent="center"
               textAlign="center"
-              maxWidth="400px"
+              maxWidth="540px"
               margin={"1rem auto 0 auto"}
+              color={DARK_GREEN_COLOR}
+              fontWeight="semibold"
             >
               Everything you need to know about the product and building you’re
               looking for?

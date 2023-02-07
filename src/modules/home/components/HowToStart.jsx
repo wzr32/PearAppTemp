@@ -42,8 +42,8 @@ const HowToStart = () => {
     <Box component="section" sx={{ background: GREY_BG_COLOR, padding: '50px 40px' }}>
       <Container>
         
-        <Typography variant="h3" textAlign="center" color={DARK_GREEN_COLOR} >How to Start</Typography>
-        <Typography variant="h5" textAlign="center" color={DARK_GREEN_COLOR} margin={"0 auto 1rem auto"}>Lorem ipsum dolor sit amet, consectetur</Typography>
+        <Typography variant="h3" fontWeight="bold" textAlign="center" color={DARK_GREEN_COLOR} >How to Start</Typography>
+        <Typography variant="h5" fontWeight="bold" textAlign="center" color={DARK_GREEN_COLOR} margin={"0 auto 1rem auto"}>Lorem ipsum dolor sit amet, consectetur</Typography>
 
         <div>
           <Slider {...settings}>

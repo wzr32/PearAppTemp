@@ -24,7 +24,7 @@ const Join = () => {
       <Box>
         <Grid container justifyContent="space-around">
           <Grid item xs={12} md={5}>
-            <Typography variant="h4">
+            <Typography variant="h4" fontWeight="bold">
               Join over 400+ startups growing with Pear
             </Typography>
             <Typography sx={{ margin: ".5rem 0 1rem" }}>
@@ -38,32 +38,17 @@ const Join = () => {
                 margin: "28px 0",
               }}
             >
-              <WhiteButton>Get started</WhiteButton>
-              <GreenButton component={NavLink} to="about-us">
-                About us
-              </GreenButton>
+              <WhiteButton>See More</WhiteButton>
+              <GreenButton>Get it</GreenButton>
             </Box>
           </Grid>
 
-          <Grid container md={3}>
-            <Grid xs={6}>
-              <img src={SVGLogo} alt="logo" />
-            </Grid>
-            <Grid xs={6}>
-              <img src={SVGLogo} alt="logo" />
-            </Grid>
-            <Grid xs={6}>
-              <img src={SVGLogo} alt="logo" />
-            </Grid>
-            <Grid xs={6}>
-              <img src={SVGLogo} alt="logo" />
-            </Grid>
-            <Grid xs={6}>
-              <img src={SVGLogo} alt="logo" />
-            </Grid>
-            <Grid xs={6}>
-              <img src={SVGLogo} alt="logo" />
-            </Grid>
+          <Grid container item md={3}>
+            {[...new Array(6)].map((_, index) => (
+              <Grid item xs={6} key={`icon_map__${index}`}>
+                <img src={SVGLogo} alt="logo" />
+              </Grid>
+            ))}
           </Grid>
         </Grid>
       </Box>

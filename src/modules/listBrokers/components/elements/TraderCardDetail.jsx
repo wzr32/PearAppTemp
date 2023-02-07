@@ -10,7 +10,12 @@ import {
   GREY_BG_COLOR,
 } from "../../../../shared/config/Colors";
 
-const TraderCardDetail = ({ broker, handleCompare, toCompare }) => {
+const TraderCardDetail = ({
+  broker,
+  handleCompare,
+  handleChoose,
+  toCompare,
+}) => {
   const isSelected =
     toCompare[0]?.ID === broker?.ID || toCompare[1]?.ID === broker?.ID;
 
@@ -80,7 +85,9 @@ const TraderCardDetail = ({ broker, handleCompare, toCompare }) => {
             justifyContent: "space-between",
           }}
         >
-          <GreenButton>Choose the provider</GreenButton>
+          <GreenButton onClick={() => handleChoose(broker.ID)}>
+            Choose the provider
+          </GreenButton>
           <WhiteButton onClick={() => handleCompare(broker)}>
             {isSelected ? "Remove" : "Add To Compare"}
           </WhiteButton>

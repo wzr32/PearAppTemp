@@ -16,6 +16,7 @@ const HeroBannerLanding = () => {
           <Grid item md={8}>
             <Typography
               variant="h3"
+              fontWeight="bold"
               textAlign="center"
               color={LIGHT_GREEN_COLOR}
             >
@@ -23,6 +24,7 @@ const HeroBannerLanding = () => {
             </Typography>
             <Typography
               variant="h5"
+              fontWeight="bold"
               textAlign="center"
               color={DARK_GREEN_COLOR}
             >
@@ -30,7 +32,7 @@ const HeroBannerLanding = () => {
             </Typography>
             <Typography
               variant="body1"
-              maxWidth="400px"
+              maxWidth="420px"
               component="span"
               display="flex"
               justifyContent="center"
