@@ -10,6 +10,7 @@ import {
   GREY_BG_COLOR,
   WHITE_BG_COLOR,
 } from "../../../shared/config/Colors";
+import { NavLink } from "react-router-dom";
 
 const Subscribe = () => {
   return (
@@ -60,7 +61,9 @@ const Subscribe = () => {
                     size="small"
                     sx={{ background: "#fff", borderRadius: "4px" }}
                   />
-                  <GreenButton>Get Started</GreenButton>
+                  <GreenButton component={NavLink} to="/get-started">
+                    Get Started
+                  </GreenButton>
                 </Box>
               </Grid>
             </Box>

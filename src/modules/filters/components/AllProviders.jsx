@@ -49,13 +49,8 @@ const AllProviders = () => {
               margin: "2rem 0 1rem 0",
             }}
           >
-            <GreenButton>
-              <NavLink
-                to="/brokers"
-                style={{ color: "#fff", textDecoration: "none" }}
-              >
-                All Providers
-              </NavLink>
+            <GreenButton component={NavLink} to="/brokers">
+              All Providers
             </GreenButton>
           </Box>
           <Typography

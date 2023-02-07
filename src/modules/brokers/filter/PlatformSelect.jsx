@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 import { Box, Container, Typography } from "@mui/material";
-import { DARK_GREEN_COLOR, LIGHT_GREEN_COLOR } from '../../../shared/config/Colors';
+import {
+  DARK_GREEN_COLOR,
+  LIGHT_GREEN_COLOR,
+} from "../../../shared/config/Colors";
+import { GreenButton } from "../../../shared/components/buttons/CustomButtons";
+import { NavLink } from "react-router-dom";
 
 const platformOpt = [
   {
@@ -23,7 +28,14 @@ const PlatformSelect = () => {
   return (
     <Container>
       <Box sx={{ margin: "120px 0" }}>
-      <Typography variant="h5" textAlign="center" color={DARK_GREEN_COLOR} margin={"1.5rem 0"}>What Type of Plataform You Select?</Typography>
+        <Typography
+          variant="h5"
+          textAlign="center"
+          color={DARK_GREEN_COLOR}
+          margin={"1.5rem 0"}
+        >
+          What Type of Plataform You Select?
+        </Typography>
 
         <Box
           sx={{
@@ -46,6 +58,13 @@ const PlatformSelect = () => {
               <Typography>{item.name}</Typography>
             </Box>
           ))}
+        </Box>
+        <Box
+          sx={{ display: "flex", justifyContent: "center", marginTop: "70px" }}
+        >
+          <GreenButton component={NavLink} to="/brokers">
+            Go to Providers
+          </GreenButton>
         </Box>
       </Box>
     </Container>

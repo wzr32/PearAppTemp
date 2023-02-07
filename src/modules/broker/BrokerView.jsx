@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 import { Box, CircularProgress, Container, Typography } from "@mui/material";
 import { GreenButton } from "../../shared/components/buttons/CustomButtons";
 
@@ -9,11 +9,10 @@ import ThisRating from "./components/ThisRating";
 import Api from "../../shared/client/api-client";
 
 const BrokerView = () => {
+  const { pathname } = useLocation();
   const { id } = useParams();
   const [broker, setBroker] = useState(undefined);
   const [loading, setLoading] = useState(true);
-
-  console.log("id broker =>> ", id);
 
   const brokerCall = async () => {
     try {
@@ -21,7 +20,6 @@ const BrokerView = () => {
         data: { data },
       } = await Api.get(`/brokers/${id}`);
       setBroker(data[0]);
-      console.log(data[0]);
     } catch (err) {
       console.log(`error on getting broker =>> `, err);
     } finally {
@@ -32,6 +30,14 @@ const BrokerView = () => {
   useEffect(() => {
     brokerCall();
   }, []);
+
+  useEffect(() => {
+    document.documentElement.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "instant",
+    });
+  }, [pathname]);
 
   let component = (
     <Box component="section" sx={{ marginBottom: "150px" }}>
@@ -77,7 +83,7 @@ const BrokerView = () => {
       </Box>
     );
 
-  if (!broker || broker === undefined)
+  if ((!broker || broker === undefined) && !loading)
     component = (
       <Box>
         <Typography textAlign="center">No data to show</Typography>

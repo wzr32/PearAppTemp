@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import HeroBannerFilters from "../filters/components/HeroBannerFilters";
 import Filters from "../filters/components/Filters";
 import Disclaimer from "../filters/components/Disclaimer";
@@ -10,6 +11,16 @@ import HowMuchInvest from "./filter/HowMuchInvest";
 import PlatformSelect from "./filter/PlatformSelect";
 
 const BrokersView = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    document.documentElement.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "instant",
+    });
+  }, [pathname]);
+
   return (
     <>
       <HeroBannerFilters />

@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { Box, Container, Typography } from "@mui/material";
-import { DARK_GREEN_COLOR, LIGHT_GREEN_COLOR } from '../../../shared/config/Colors';
-
+import {
+  DARK_GREEN_COLOR,
+  LIGHT_GREEN_COLOR,
+} from "../../../shared/config/Colors";
 
 const investOpt = [
   {
@@ -21,12 +23,17 @@ const WouldInvest = () => {
     setInvest(id);
   };
 
-  console.log("invest id =>> ", invest);
-
   return (
     <Container>
       <Box sx={{ margin: "120px 0" }}>
-      <Typography variant="h5" textAlign="center" color={DARK_GREEN_COLOR} margin={"1.5rem 0"}>What Type of Plataform You Select?</Typography>
+        <Typography
+          variant="h5"
+          textAlign="center"
+          color={DARK_GREEN_COLOR}
+          margin={"1.5rem 0"}
+        >
+          What Type of Plataform You Select?
+        </Typography>
 
         <Box
           sx={{
