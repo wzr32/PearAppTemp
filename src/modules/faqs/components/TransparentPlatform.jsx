@@ -27,16 +27,17 @@ const TransparentPlataform = () => {
               variant="h3"
               textAlign="center"
               color={LIGHT_GREEN_COLOR}
+              fontWeight="bold"
             >
-              {" "}
               A transparent platform.
             </Typography>
             <Typography
               variant="h5"
               textAlign="center"
               color={DARK_GREEN_COLOR}
-              maxWidth="360px"
+              maxWidth="420px"
               margin={".5rem auto 0 auto"}
+              fontWeight="bold"
             >
               We show the best platform, without hidden advertising.
             </Typography>
@@ -46,7 +47,7 @@ const TransparentPlataform = () => {
               display="flex"
               justifyContent="center"
               textAlign="center"
-              maxWidth="360px"
+              maxWidth="400px"
               margin={"1rem auto 0 auto"}
             >
               At Pear we choose the best platform based on objective parameters,

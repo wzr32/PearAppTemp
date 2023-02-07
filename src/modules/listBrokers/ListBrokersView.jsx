@@ -5,6 +5,7 @@ import GetStarted from "./components/GetStarted";
 import MappingTraders from "./components/MappingTraders";
 import SeeAllProviders from "./components/SeeAllProviders";
 import WhatIsPear from "./components/WhatIsPear";
+import Subscribe from "./components/Subscribe";
 
 const ListBrokersView = () => {
   const [brokers, setBrokers] = useState([]);
@@ -58,6 +59,7 @@ const ListBrokersView = () => {
       )}
       <SeeAllProviders />
       <WhatIsPear />
+      <Subscribe/>
     </section>
   );
 };

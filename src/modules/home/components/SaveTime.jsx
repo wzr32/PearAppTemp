@@ -10,9 +10,9 @@ const SaveTime = () => {
       <Box component="section" sx={{ margin: "0 0 10rem 0" }}>
         <Grid container spacing={2} alignItems="center">
           <Grid item md={8}>
-            <Typography variant="h3" textAlign="center" color={LIGHT_GREEN_COLOR} maxWidth="400px" margin={"0 auto .5rem auto"}>Save Time</Typography>
-            <Typography variant="h5" textAlign="center" color={DARK_GREEN_COLOR}> Simple Search </Typography>
-            <Typography variant="body1" component="span" display="flex" justifyContent="center" textAlign="center" maxWidth="360px" margin={"1rem auto 0 auto"}>
+            <Typography variant="h3" fontWeight="bold" textAlign="center" color={LIGHT_GREEN_COLOR} maxWidth="400px" margin={"0 auto .5rem auto"}>Save Time</Typography>
+            <Typography variant="h5" fontWeight="bold" textAlign="center" color={DARK_GREEN_COLOR}> Simple Search </Typography>
+            <Typography variant="body1" component="span" display="flex" justifyContent="center" textAlign="center" maxWidth="400px" margin={"1rem auto 0 auto"}>
               Save hours of research. Find the provider that it is right for you by
               answering a few simple questions.
             </Typography>

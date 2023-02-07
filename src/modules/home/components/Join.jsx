@@ -20,11 +20,11 @@ const Join = () => {
         <Box>
             <Grid container justifyContent="space-around">
                 <Grid item xs={12} md={5}>
-                    <Typography variant='h4' >Join over 400+ startups growing with Pear</Typography>
+                    <Typography variant='h4' fontWeight="bold">Join over 400+ startups growing with Pear</Typography>
                     <Typography sx={{ margin: ".5rem 0 1rem" }} >Start now with us!</Typography>
                     <Box sx={{ display: "flex", gap: "30px", flexWrap: "wrap", margin: "28px 0" }}>
-                        <WhiteButton>Get started</WhiteButton>
-                        <GreenButton>About us</GreenButton>
+                        <WhiteButton>See More</WhiteButton>
+                        <GreenButton>Get it</GreenButton>
                     </Box>
                 </Grid>
                 
