@@ -27,7 +27,6 @@ const Router = () => {
           <Route path=":platf1/:platf2" element={<ListBrokersView />} />
         </Route>
         <Route path="/compare" element={<CompareView />} />
-        <Route element={<ProvidersView />} path="/providers" />
         <Route element={<PrivacyView />} path="/privacy-politics" />
         <Route element={<TermsView />} path="/terms-and-conditions" />
         <Route element={<NotFoundView />} path="*" />

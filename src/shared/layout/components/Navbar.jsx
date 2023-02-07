@@ -57,13 +57,18 @@ const Navbar = () => {
                 <NavLink to="/" style={linkStyles}>
                   Resources
                 </NavLink>
-                <NavLink to="/providers" style={linkStyles}>
+                <NavLink to="/brokers" style={linkStyles}>
                   Providers
                 </NavLink>
                 <NavLink to="/faqs" style={linkStyles}>
                   Faqs
                 </NavLink>
-                <GreenButton color="inherit" variant="contained">
+                <GreenButton
+                  component={NavLink}
+                  to="/get-started"
+                  color="inherit"
+                  variant="contained"
+                >
                   Get Started
                 </GreenButton>
               </Box>
