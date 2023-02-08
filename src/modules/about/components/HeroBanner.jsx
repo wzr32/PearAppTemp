@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Container, Grid, Typography } from "@mui/material";
 import { GreenButton } from "../../../shared/components/buttons/CustomButtons";
-import GBPhone from "../../../shared/assets/Landing_Phone.svg";
+import GBPhone from "../../../shared/assets/Landing_phone.svg";
 import {
   DARK_GREEN_COLOR,
   MEDIUM_GREEN_COLOR,
