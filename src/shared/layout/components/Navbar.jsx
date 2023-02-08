@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import { Menu as MenuIcon } from "@mui/icons-material";
 import { DARK_GREEN_COLOR, GREY_BG_COLOR } from "../../config/Colors";
 import { GreenButton } from "../../components/buttons/CustomButtons";
-import SVGLogo from "../../../shared/assets/logo.svg";
+import SVGLogo from "../../../shared/assets/Logo.svg";
 import MobileMenu from "./MobileMenu";
 
 const linkStyles = {
