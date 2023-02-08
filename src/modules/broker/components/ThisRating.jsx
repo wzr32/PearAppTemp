@@ -1,6 +1,10 @@
 import React from "react";
 import { Box, Rating, Typography } from "@mui/material";
-import { DARK_GREEN_COLOR, GREY_BG_COLOR } from "../../../shared/config/Colors";
+import {
+  DARK_GREEN_COLOR,
+  GREY_BG_COLOR,
+  LIGHT_GREEN_COLOR,
+} from "../../../shared/config/Colors";
 
 const ThisRating = ({ credibility, cvs, reviews, quality, price }) => {
   return (
@@ -33,7 +37,12 @@ const ThisRating = ({ credibility, cvs, reviews, quality, price }) => {
           }}
         >
           <Typography fontWeight="bold">Credibility</Typography>
-          <Rating name="simple-controlled" value={credibility} />
+          <Rating
+            name="simple-controlled"
+            value={credibility}
+            readOnly
+            sx={{ color: LIGHT_GREEN_COLOR }}
+          />
         </Box>
 
         <Box
@@ -45,7 +54,12 @@ const ThisRating = ({ credibility, cvs, reviews, quality, price }) => {
           }}
         >
           <Typography fontWeight="bold">CVs</Typography>
-          <Rating name="simple-controlled" value={cvs} />
+          <Rating
+            name="simple-controlled"
+            value={cvs}
+            readOnly
+            sx={{ color: LIGHT_GREEN_COLOR }}
+          />
         </Box>
 
         <Box
@@ -57,7 +71,12 @@ const ThisRating = ({ credibility, cvs, reviews, quality, price }) => {
           }}
         >
           <Typography fontWeight="bold">Reviews</Typography>
-          <Rating name="simple-controlled" value={reviews} />
+          <Rating
+            name="simple-controlled"
+            value={reviews}
+            readOnly
+            sx={{ color: LIGHT_GREEN_COLOR }}
+          />
         </Box>
 
         <Box
@@ -69,7 +88,12 @@ const ThisRating = ({ credibility, cvs, reviews, quality, price }) => {
           }}
         >
           <Typography fontWeight="bold">Quality of content:</Typography>
-          <Rating name="simple-controlled" value={quality} />
+          <Rating
+            name="simple-controlled"
+            value={quality}
+            readOnly
+            sx={{ color: LIGHT_GREEN_COLOR }}
+          />
         </Box>
 
         <Box
@@ -81,7 +105,12 @@ const ThisRating = ({ credibility, cvs, reviews, quality, price }) => {
           }}
         >
           <Typography fontWeight="bold">Price</Typography>
-          <Rating name="simple-controlled" value={price} />
+          <Rating
+            name="simple-controlled"
+            value={price}
+            readOnly
+            sx={{ color: LIGHT_GREEN_COLOR }}
+          />
         </Box>
       </Box>
     </Box>

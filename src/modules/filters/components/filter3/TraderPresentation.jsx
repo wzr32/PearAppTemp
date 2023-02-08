@@ -1,8 +1,9 @@
 import { Box, Container, Rating, Typography } from "@mui/material";
 import React, { useState } from "react";
+import { LIGHT_GREEN_COLOR } from "../../../../shared/config/Colors";
 
 const TraderPresentation = ({ logoUrl = "", name, description }) => {
-  const [value, setValue] = useState(4);
+  const [value, setValue] = useState(4.5);
   return (
     <Box>
       <Container>
@@ -36,13 +37,18 @@ const TraderPresentation = ({ logoUrl = "", name, description }) => {
           >
             <Typography fontWeight="bold">{name}</Typography>
             <Typography variant="caption">{description || name}</Typography>
-            <Rating
-              name="simple-controlled"
-              value={value}
-              onChange={(_, newValue) => {
-                setValue(newValue);
-              }}
-            />
+            <Box sx={{ display: "flex", alignItems: "center", gap: "1em" }}>
+              <Rating
+                name="simple-controlled"
+                value={value}
+                precision={0.5}
+                readOnly
+                sx={{ color: LIGHT_GREEN_COLOR }}
+              />
+              <Typography fontWeight="bold" variant="h6">
+                {value}
+              </Typography>
+            </Box>
           </Box>
         </Box>
       </Container>
