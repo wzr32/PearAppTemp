@@ -3,7 +3,7 @@ import { Box, Container, Grid, Typography } from "@mui/material";
 import { Instagram as InstagramIcon } from "@mui/icons-material";
 import { NavLink } from "react-router-dom";
 import { MEDIUM_GREEN_COLOR } from "../../config/Colors";
-import SVGLogo from "../../../shared/assets/logo_white.svg";
+import SVGLogo from "../../../shared/assets/Logo_white.svg";
 
 const Footer = () => {
   return (
