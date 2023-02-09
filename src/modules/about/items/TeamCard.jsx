@@ -1,12 +1,7 @@
-import React from 'react';
-import { 
-  Avatar, 
-  Box, 
-  Card, 
-  CardContent, 
-  Typography 
-} from '@mui/material';
-import { GREY_BG_COLOR } from '../../../shared/config/Colors';
+import React from "react";
+import { Avatar, Card, CardContent, Typography } from "@mui/material";
+import { GREY_BG_COLOR } from "../../../shared/config/Colors";
+import bitcoinAvatar from "../../../shared/assets/bitcoin-logo.svg";
 
 const TeamCard = ({ position, name, description }) => {
   return (
@@ -17,19 +12,22 @@ const TeamCard = ({ position, name, description }) => {
           display: "flex",
           flexDirection: "column",
           gap: "18px",
-        }}>
+        }}
+      >
         <Avatar
+          src={bitcoinAvatar}
           sx={{
             height: "100px",
-            width: "100px"
+            width: "100px",
           }}
-        >A</Avatar>
-        <Typography>{name}</Typography>
+        />
+        <Typography fontWeight="bold" variant="h6">
+          {name}
+        </Typography>
         <Typography>{position}</Typography>
-        <Typography>{description}</Typography>
-        <Box>
-          icons
-        </Box>
+        <Typography fontWeight="bold" variant="caption">
+          {description}
+        </Typography>
       </CardContent>
     </Card>
   );
