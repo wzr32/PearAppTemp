@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import { Box, CircularProgress } from "@mui/material";
 import Api from "../../shared/client/api-client";
 import GetStarted from "./components/GetStarted";
@@ -8,6 +9,8 @@ import WhatIsPear from "./components/WhatIsPear";
 import Subscribe from "./components/Subscribe";
 
 const ListBrokersView = () => {
+  const { pathname } = useLocation();
+
   const [brokers, setBrokers] = useState([]);
   const [loading, setLoading] = useState(true);
   const [toCompare, setToCompare] = useState([]);
@@ -41,6 +44,14 @@ const ListBrokersView = () => {
     brokersCall();
   }, []);
 
+  useEffect(() => {
+    document.documentElement.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "instant",
+    });
+  }, [pathname]);
+
   return (
     <section>
       <GetStarted />
@@ -59,7 +70,7 @@ const ListBrokersView = () => {
       )}
       <SeeAllProviders />
       <WhatIsPear />
-      <Subscribe/>
+      <Subscribe />
     </section>
   );
 };

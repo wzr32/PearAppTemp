@@ -43,7 +43,7 @@ const BrokerView = () => {
     <Box component="section" sx={{ marginBottom: "150px" }}>
       <Container>
         <TraderPresentation
-          logoUrl={broker?.Website || ""}
+          logoUrl={broker?.Logo}
           name={broker?.Name}
           description={broker?.Description}
         />

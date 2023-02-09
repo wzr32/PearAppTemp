@@ -9,6 +9,7 @@ import {
   DARK_GREEN_COLOR,
   GREY_BG_COLOR,
 } from "../../../../shared/config/Colors";
+import brokerDummyLogo from "../../../../shared/assets/presencia_logo.png";
 
 const TraderCardDetail = ({
   broker,
@@ -45,7 +46,7 @@ const TraderCardDetail = ({
             }}
           >
             <img
-              src=""
+              src={broker.Logo || brokerDummyLogo}
               alt=""
               style={{
                 objectFit: "contain",

@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-import { Box, Container, Typography } from "@mui/material";
-import {
-  DARK_GREEN_COLOR,
-  LIGHT_GREEN_COLOR,
-} from "../../../shared/config/Colors";
-import { GreenButton } from "../../../shared/components/buttons/CustomButtons";
 import { NavLink } from "react-router-dom";
+import { Box, Container, Typography } from "@mui/material";
+import { DARK_GREEN_COLOR } from "../../../shared/config/Colors";
+import { GreenButton } from "../../../shared/components/buttons/CustomButtons";
+import arrowIcon from "../../../shared/assets/arrow_icon.svg";
+import arrowIconWhite from "../../../shared/assets/arrow_icon_white.svg";
 
 const platformOpt = [
   {
@@ -56,7 +55,13 @@ const PlatformSelect = () => {
               }
               onClick={() => setWouldInvest(item.id)}
             >
-              <Typography>{item.name}</Typography>
+              <img
+                src={wouldInvest === item.id ? arrowIconWhite : arrowIcon}
+                alt={item.name}
+              />
+              <Typography fontWeight="bold" variant="h6">
+                {item.name}
+              </Typography>
             </Box>
           ))}
         </Box>

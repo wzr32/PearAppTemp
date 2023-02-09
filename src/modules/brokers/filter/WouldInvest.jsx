@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import { Box, Container, Typography } from "@mui/material";
-import {
-  DARK_GREEN_COLOR,
-  LIGHT_GREEN_COLOR,
-} from "../../../shared/config/Colors";
+import { DARK_GREEN_COLOR } from "../../../shared/config/Colors";
+import arrowIcon from "../../../shared/assets/arrow_icon.svg";
+import arrowIconWhite from "../../../shared/assets/arrow_icon_white.svg";
 
 const investOpt = [
   {
@@ -33,7 +32,7 @@ const WouldInvest = () => {
           margin={"1.5rem 0"}
           fontWeight="bold"
         >
-          What Type of Plataform You Select?
+          I would Invest
         </Typography>
 
         <Box
@@ -54,7 +53,13 @@ const WouldInvest = () => {
               }
               onClick={() => handleClick(item.id)}
             >
-              <Typography>{item.name}</Typography>
+              <img
+                src={invest === item.id ? arrowIconWhite : arrowIcon}
+                alt={item.name}
+              />
+              <Typography fontWeight="bold" variant="h6">
+                {item.name}
+              </Typography>
             </Box>
           ))}
         </Box>

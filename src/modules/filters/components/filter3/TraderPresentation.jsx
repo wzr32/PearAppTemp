@@ -1,8 +1,9 @@
-import { Box, Container, Rating, Typography } from "@mui/material";
 import React, { useState } from "react";
+import { Box, Container, Rating, Typography } from "@mui/material";
 import { LIGHT_GREEN_COLOR } from "../../../../shared/config/Colors";
+import brokerDummyLogo from "../../../../shared/assets/presencia_logo.png";
 
-const TraderPresentation = ({ logoUrl = "", name, description }) => {
+const TraderPresentation = ({ logoUrl, name, description }) => {
   const [value, setValue] = useState(4.5);
   return (
     <Box>
@@ -23,7 +24,7 @@ const TraderPresentation = ({ logoUrl = "", name, description }) => {
             }}
           >
             <img
-              src={logoUrl}
+              src={logoUrl || brokerDummyLogo}
               alt={name}
               style={{ objectFit: "contain", height: "100%", width: "100%" }}
             />
