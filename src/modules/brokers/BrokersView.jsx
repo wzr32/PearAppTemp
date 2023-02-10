@@ -6,9 +6,12 @@ import Disclaimer from "../filters/components/Disclaimer";
 import AllProviders from "../filters/components/AllProviders";
 import AboutPear from "../filters/components/AboutPear";
 import Subscribe from "../filters/components/Subscribe";
-import WouldInvest from "./filter/WouldInvest";
-import HowMuchInvest from "./filter/HowMuchInvest";
-import PlatformSelect from "./filter/PlatformSelect";
+import WouldInvest from "./components/WouldInvest";
+import HowMuchInvest from "./components/HowMuchInvest";
+import PlatformSelect from "./components/PlatformSelect";
+import Find from "./components/Find";
+import CountryResidence from "./components/CountryResidence";
+import LookingInvest from "./components/LookingInvest";
 
 const BrokersView = () => {
   const { pathname } = useLocation();
@@ -25,8 +28,11 @@ const BrokersView = () => {
     <>
       <HeroBannerFilters />
       <Filters />
+      <Find />
       <WouldInvest />
+      <CountryResidence />
       <HowMuchInvest />
+      <LookingInvest />
       <PlatformSelect />
       <Disclaimer />
       <AllProviders />

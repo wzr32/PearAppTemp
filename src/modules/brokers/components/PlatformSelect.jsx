@@ -3,8 +3,10 @@ import { NavLink } from "react-router-dom";
 import { Box, Container, Typography } from "@mui/material";
 import { DARK_GREEN_COLOR } from "../../../shared/config/Colors";
 import { GreenButton } from "../../../shared/components/buttons/CustomButtons";
-import arrowIcon from "../../../shared/assets/arrow_icon.svg";
-import arrowIconWhite from "../../../shared/assets/arrow_icon_white.svg";
+import {
+  RadioButtonUnchecked as RadioButtonUncheckedIcon,
+  Check as CheckIcon,
+} from "@mui/icons-material";
 
 const platformOpt = [
   {
@@ -12,12 +14,12 @@ const platformOpt = [
     name: "CDFs",
   },
   {
-    id: "etfs",
-    name: "ETFs",
-  },
-  {
     id: "crypto",
     name: "Crypto",
+  },
+  {
+    id: "etfs",
+    name: "ETFs",
   },
 ];
 
@@ -29,7 +31,6 @@ const PlatformSelect = () => {
       <Box sx={{ margin: "120px 0" }}>
         <Typography
           variant="h5"
-          textAlign="center"
           color={DARK_GREEN_COLOR}
           margin={"1.5rem 0"}
           fontWeight="bold"
@@ -55,10 +56,11 @@ const PlatformSelect = () => {
               }
               onClick={() => setWouldInvest(item.id)}
             >
-              <img
-                src={wouldInvest === item.id ? arrowIconWhite : arrowIcon}
-                alt={item.name}
-              />
+              {wouldInvest === item.id ? (
+                <CheckIcon />
+              ) : (
+                <RadioButtonUncheckedIcon />
+              )}
               <Typography fontWeight="bold" variant="h6">
                 {item.name}
               </Typography>
@@ -69,7 +71,7 @@ const PlatformSelect = () => {
           sx={{ display: "flex", justifyContent: "center", marginTop: "70px" }}
         >
           <GreenButton component={NavLink} to="/brokers">
-            Go to Providers
+            Next
           </GreenButton>
         </Box>
       </Box>
