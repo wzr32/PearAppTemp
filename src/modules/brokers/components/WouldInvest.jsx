@@ -1,17 +1,15 @@
 import React, { useState } from "react";
 import { Box, Container, Typography } from "@mui/material";
 import { DARK_GREEN_COLOR } from "../../../shared/config/Colors";
-import arrowIcon from "../../../shared/assets/arrow_icon.svg";
-import arrowIconWhite from "../../../shared/assets/arrow_icon_white.svg";
 
 const investOpt = [
   {
-    id: "kyc",
-    name: "KYC",
+    id: "someone",
+    name: "Someone to manage the investments for me",
   },
   {
-    id: "non-kyc",
-    name: "Non KYC",
+    id: "myself",
+    name: "To manage everything myself",
   },
 ];
 
@@ -27,7 +25,6 @@ const WouldInvest = () => {
       <Box sx={{ margin: "120px 0" }}>
         <Typography
           variant="h5"
-          textAlign="center"
           color={DARK_GREEN_COLOR}
           margin={"1.5rem 0"}
           fontWeight="bold"
@@ -53,10 +50,6 @@ const WouldInvest = () => {
               }
               onClick={() => handleClick(item.id)}
             >
-              <img
-                src={invest === item.id ? arrowIconWhite : arrowIcon}
-                alt={item.name}
-              />
               <Typography fontWeight="bold" variant="h6">
                 {item.name}
               </Typography>

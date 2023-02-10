@@ -1,7 +1,7 @@
-import * as React from 'react';
-import { InputBase, TextField } from '@mui/material';
-import { styled } from '@mui/material/styles';
-import { DARK_GREEN_COLOR, LIGHT_GREEN_COLOR } from '../../config/Colors';
+import * as React from "react";
+import { InputBase, TextField } from "@mui/material";
+import { styled } from "@mui/material/styles";
+import { DARK_GREEN_COLOR, LIGHT_GREEN_COLOR } from "../../config/Colors";
 
 const WhiteTextField = styled(InputBase)(({ theme }) => ({
   color: DARK_GREEN_COLOR,
@@ -14,7 +14,7 @@ const WhiteTextField = styled(InputBase)(({ theme }) => ({
     fontWeight: "bold",
   },
   "& input::placeholder": {
-    color: "red !important"
+    color: "red !important",
   },
 }));
 
@@ -29,14 +29,14 @@ const GreyTextField = styled(TextField)(({ theme }) => ({
     fontWeight: "bold",
   },
   "& input::placeholder": {
-    color: "red !important"
+    color: "red !important",
   },
 }));
 
-export function WhiteInput ({ children }) {
-  return <WhiteTextField>{children}</WhiteTextField>;
-};
+export function WhiteInput({ children, props }) {
+  return <WhiteTextField {...props}>{children}</WhiteTextField>;
+}
 
-export function GreyInput ({ children }) {
-  return <GreyTextField>{children}</GreyTextField>;
-};
+export function GreyInput({ children, props }) {
+  return <GreyTextField {...props}>{children}</GreyTextField>;
+}
