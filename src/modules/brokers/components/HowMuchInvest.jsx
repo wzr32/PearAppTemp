@@ -22,8 +22,9 @@ const CustomSlider = styled(Slider)({
     color: LIGHT_GREEN_COLOR,
   },
   "& .MuiSlider-thumb": {
-    height: 36,
-    width: 36,
+    padding: "0 .2rem",
+    height: 28,
+    width: 28,
     backgroundColor: LIGHT_GREEN_COLOR,
     borderRadius: 5,
     "&:focus, &:hover, &.Mui-active, &.Mui-focusVisible": {

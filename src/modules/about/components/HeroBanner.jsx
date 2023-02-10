@@ -50,7 +50,7 @@ const HeroBanner = () => {
             <Box sx={{ width: "100%", height: "100%" }}>
               <img
                 src={GBPhone}
-                alt="about_hand"
+                alt="phone"
                 className="landing-herobanner__image"
               />
             </Box>

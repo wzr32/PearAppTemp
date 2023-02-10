@@ -10,6 +10,7 @@ const BannerFAQS = () => {
   return (
     <Box component="section" sx={{ marginTop: "4rem" }}>
       <Container>
+        
         <Grid container spacing={2} alignItems="center">
           <Grid item md={8}>
             <Typography
@@ -41,7 +42,7 @@ const BannerFAQS = () => {
             <Box sx={{ width: "100%", height: "100%" }}>
               <img
                 src={GBPhone}
-                alt="about_hand"
+                alt="phones"
                 className="landing-herobanner__image"
               />
             </Box>

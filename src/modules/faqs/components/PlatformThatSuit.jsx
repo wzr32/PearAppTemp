@@ -13,7 +13,7 @@ const PlataformThatSuit = () => {
     <Box component="section" sx={{ margin: "2rem 0" }}>
       <Container>
         <Grid container spacing={2} alignItems="center">
-          <Grid item md={7}>
+          <Grid item md={8}>
             <Typography
               variant="h3"
               textAlign="center"
@@ -46,7 +46,7 @@ const PlataformThatSuit = () => {
               <br /> in a few seconds.
             </Typography>
           </Grid>
-          <Grid item md={4}>
+          <Grid item xs={12} md={4}>
             <Box sx={{ width: "100%", height: "100%" }}>
               <img
                 src={GBPhone}

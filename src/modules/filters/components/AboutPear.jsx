@@ -15,8 +15,14 @@ const AboutPear = () => {
           Lorem ipsum dolor sit amet consectetur. Elit facilisi sed lobortis suspendisse dignissim. Posuere ultrices fringilla sapien ac mattis enim sed. Vestibulum bibendum praesent tellus est tellus sem. Id non lectus ac sit. Vitae nulla in 
           </Typography>
         </Grid>
-        <Grid item md={4}>
-          <img src={SVGPhones} alt="Phones" />
+        <Grid item md={5}>
+        <Box sx={{ width: "100%", height: "100%" }}>
+              <img
+                src={SVGPhones}
+                alt="Phones"
+                className="landing-herobanner__image"
+              />
+            </Box>
         </Grid>
       </Grid>
     </Box>

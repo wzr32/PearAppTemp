@@ -13,12 +13,18 @@ const Subscribe = () => {
   return (
     <Box
       component="section"
-      sx={{ minHeight: "100vh", margin: "2rem 0 4rem 0" }}
+      sx={{ margin: "2rem 0 4rem 0" }}
     >
       <Container>
-        <Grid container spacing={32} alignItems="center">
+        <Grid container spacing={2} alignItems="center">
           <Grid item md={4}>
-            <img src={SVGPhones} alt="about_hand" />
+          <Box sx={{ width: "100%", height: "100%" }}>
+              <img
+                src={SVGPhones}
+                alt="Phones"
+                className="landing-herobanner__image"
+              />
+            </Box>
           </Grid>
           <Grid item md={8}>
             <Box
@@ -28,7 +34,7 @@ const Subscribe = () => {
                 borderRadius: "30px",
                 margin: "1.5rem auto 0 auto",
                 textAlign: "center",
-                maxWidth: "500px",
+                maxWidth: "600px",
               }}
             >
               <Typography color={WHITE_BG_COLOR} sx={{ margin: ".5rem 0" }}>

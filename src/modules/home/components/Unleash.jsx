@@ -5,7 +5,7 @@ import { LIGHT_GREEN_COLOR, MEDIUM_GREEN_COLOR } from '../../../shared/config/Co
 const Unleash = () => {
   return (
     <Container>
-      <Box component="section" sx={{ margin: "12rem 0 10rem 0", textAlign: "center" }}>
+      <Box component="section" sx={{ margin: "8rem 0 6rem 0", textAlign: "center" }}>
         <Typography variant="h3" fontWeight="bold" color={MEDIUM_GREEN_COLOR}>
           Unleash The Full Power Of Data
         </Typography>
@@ -18,7 +18,7 @@ const Unleash = () => {
         </Typography>
 
         <Box>
-          <Grid container justifyContent="space-between">
+          <Grid container rowGap={4} justifyContent="space-between">
             <Grid item xs={12} md={4}>
               <Typography variant='h3' fontWeight="bold" color={LIGHT_GREEN_COLOR}>400+</Typography>
               <Typography fontWeight="bold" color={MEDIUM_GREEN_COLOR}>Projects completed</Typography>

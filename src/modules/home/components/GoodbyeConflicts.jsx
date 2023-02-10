@@ -8,10 +8,11 @@ import GBPhone from "../../../shared/assets/Landing_phone.svg";
 
 const GoodbyeConflicts = () => {
   return (
-    <Container>
-      <Box component="section" sx={{ margin: "0rem 0 6rem 0" }}>
+    <Box component="section" sx={{ margin: "0rem 0 6rem 0" }}>
+        <Container>
+
         <Grid container spacing={2} alignItems="center">
-          <Grid item md={4}>
+          <Grid item xs={12} md={4}>
             <Box sx={{ width: "100%", height: "100%" }}>
               <img
                 src={GBPhone}
@@ -20,6 +21,7 @@ const GoodbyeConflicts = () => {
               />
             </Box>
           </Grid>
+
           <Grid item md={8}>
             <Typography
               variant="h3"
@@ -55,8 +57,9 @@ const GoodbyeConflicts = () => {
             </Typography>
           </Grid>
         </Grid>
-      </Box>
-    </Container>
+
+      </Container>
+    </Box>
   );
 };
 
