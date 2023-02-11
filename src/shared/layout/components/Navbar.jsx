@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { AppBar, Box, Toolbar, IconButton, Container } from "@mui/material";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { Menu as MenuIcon } from "@mui/icons-material";
 import { DARK_GREEN_COLOR, GREY_BG_COLOR } from "../../config/Colors";
 import { GreenButton } from "../../components/buttons/CustomButtons";
@@ -13,6 +13,8 @@ const linkStyles = {
 };
 
 const Navbar = () => {
+  const navigate = useNavigate();
+
   const [showMobile, setShowMobile] = useState(false);
 
   const handleOpenMobile = () => setShowMobile(true);
@@ -34,7 +36,10 @@ const Navbar = () => {
                 fontWeight: "bold",
               }}
             >
-              <Box sx={{ mr: "50px" }}>
+              <Box
+                sx={{ mr: "50px", cursor: "pointer" }}
+                onClick={() => navigate("/")}
+              >
                 <img src={SVGLogo} alt="pearApp" />
               </Box>
               <Box
@@ -49,19 +54,16 @@ const Navbar = () => {
                 }}
               >
                 <NavLink to="/" style={linkStyles}>
-                  Home
-                </NavLink>
-                <NavLink to="/" style={linkStyles}>
-                  Products
-                </NavLink>
-                <NavLink to="/" style={linkStyles}>
-                  Resources
-                </NavLink>
-                <NavLink to="/brokers" style={linkStyles}>
-                  Providers
+                  About
                 </NavLink>
                 <NavLink to="/faqs" style={linkStyles}>
-                  Faqs
+                  FAQs
+                </NavLink>
+                <NavLink to="/terms-and-conditions" style={linkStyles}>
+                  Terms
+                </NavLink>
+                <NavLink to="/privacy-politics" style={linkStyles}>
+                  Politics
                 </NavLink>
                 <GreenButton
                   component={NavLink}
@@ -72,11 +74,7 @@ const Navbar = () => {
                   Get Started
                 </GreenButton>
               </Box>
-              <IconButton
-                size="large"
-                edge="start"
-                color="inherit"
-                aria-label="menu"
+              <Box
                 sx={{
                   display: {
                     md: "none",
@@ -84,10 +82,21 @@ const Navbar = () => {
                   flexGrow: 1,
                   justifyContent: "end",
                 }}
-                onClick={handleOpenMobile}
               >
-                <MenuIcon />
-              </IconButton>
+                <IconButton
+                  size="large"
+                  edge="start"
+                  color="inherit"
+                  aria-label="menu"
+                  onClick={handleOpenMobile}
+                  sx={{
+                    marginLeft: "auto",
+                    display: "block",
+                  }}
+                >
+                  <MenuIcon />
+                </IconButton>
+              </Box>
             </Toolbar>
           </Container>
         </AppBar>

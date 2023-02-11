@@ -17,21 +17,27 @@ const MainData = () => {
           sx={{
             display: "flex",
             justifyContent: "space-between",
+            gap: { xs: "1em", md: "2em" },
             color: DARK_GREEN_COLOR,
           }}
         >
           <Typography fontWeight="bold">Main Educator</Typography>
-          <Typography fontWeight="bold">Anton Kreil</Typography>
+          <Typography fontWeight="bold" textAlign="end">
+            Anton Kreil
+          </Typography>
         </Box>
         <Box
           sx={{
             display: "flex",
             justifyContent: "space-between",
+            gap: { xs: "1em", md: "2em" },
             color: DARK_GREEN_COLOR,
           }}
         >
           <Typography fontWeight="bold">Level</Typography>
-          <Typography fontWeight="bold">Intermediate - Advanced</Typography>
+          <Typography fontWeight="bold" textAlign="end">
+            Intermediate - Advanced
+          </Typography>
         </Box>
       </Box>
 
@@ -47,11 +53,12 @@ const MainData = () => {
           sx={{
             display: "flex",
             justifyContent: "space-between",
+            gap: { xs: "1em", md: "2em" },
             color: DARK_GREEN_COLOR,
           }}
         >
           <Typography fontWeight="bold">Format</Typography>
-          <Typography fontWeight="bold">
+          <Typography fontWeight="bold" textAlign="end">
             Online, pre-recorded & presential 1-2-1 mentoring
           </Typography>
         </Box>
@@ -69,11 +76,14 @@ const MainData = () => {
           sx={{
             display: "flex",
             justifyContent: "space-between",
+            gap: { xs: "1em", md: "2em" },
             color: DARK_GREEN_COLOR,
           }}
         >
           <Typography fontWeight="bold">Certification</Typography>
-          <Typography fontWeight="bold">Yes, upon passing an exam</Typography>
+          <Typography fontWeight="bold" textAlign="end">
+            Yes, upon passing an exam
+          </Typography>
         </Box>
       </Box>
 

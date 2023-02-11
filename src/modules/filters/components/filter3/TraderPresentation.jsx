@@ -12,7 +12,8 @@ const TraderPresentation = ({ logoUrl, name, description }) => {
           sx={{
             margin: "240px auto 156px",
             display: "flex",
-            gap: "80px",
+            flexWrap: "wrpa",
+            gap: { xs: "30px", md: "80px" },
           }}
         >
           <Box

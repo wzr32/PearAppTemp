@@ -54,10 +54,6 @@ const StartForm = () => {
     console.log("submit data =>> ", data);
   });
 
-  useEffect(() => {
-    console.log("%cerrors", "background: black; color: white;", errors);
-  }, [errors]);
-
   return (
     <Box
       component="section"
@@ -171,13 +167,13 @@ const StartForm = () => {
               </Grid>
             </Grid>
             <Grid item md={5}>
-            <Box sx={{ width: "100%", height: "100%" }}>
-              <img
-                src={SVGLanding}
-                alt="phones"
-                className="landing-herobanner__image"
-              />
-            </Box>
+              <Box sx={{ width: "100%", height: "100%" }}>
+                <img
+                  src={SVGLanding}
+                  alt="phones"
+                  className="landing-herobanner__image"
+                />
+              </Box>
             </Grid>
           </Grid>
         </form>

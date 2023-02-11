@@ -1,8 +1,9 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { Box, Drawer, IconButton } from "@mui/material";
+import { Box, Drawer, IconButton, Typography } from "@mui/material";
 import { Close as CloseIcon } from "@mui/icons-material";
 import { GreenButton } from "../../components/buttons/CustomButtons";
+import { DARK_GREEN_COLOR } from "../../config/Colors";
 
 const MobileMenu = ({ open, onClose }) => {
   return (
@@ -12,17 +13,51 @@ const MobileMenu = ({ open, onClose }) => {
           display: "flex",
           flexDirection: "column",
           gap: "30px",
-          alignItems: "center",
           padding: "4em 2em",
           position: "relative",
           overflowY: "auto",
         }}
       >
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/">Products</NavLink>
-        <NavLink to="/">Resources</NavLink>
-        <NavLink to="/">Pricing</NavLink>
-        <NavLink to="/faqs">Faqs</NavLink>
+        <NavLink
+          style={{ textDecoration: "none", color: DARK_GREEN_COLOR }}
+          to="/"
+        >
+          <Typography textAlign="left" fontWeight="bold">
+            Home
+          </Typography>
+        </NavLink>
+        <NavLink
+          style={{ textDecoration: "none", color: DARK_GREEN_COLOR }}
+          to="/about-us"
+        >
+          <Typography textAlign="left" fontWeight="bold">
+            About
+          </Typography>
+        </NavLink>
+        <NavLink
+          style={{ textDecoration: "none", color: DARK_GREEN_COLOR }}
+          to="/faqs"
+        >
+          <Typography textAlign="left" fontWeight="bold">
+            FAQs
+          </Typography>
+        </NavLink>
+        <NavLink
+          style={{ textDecoration: "none", color: DARK_GREEN_COLOR }}
+          to="/terms-and-conditions"
+        >
+          <Typography textAlign="left" fontWeight="bold">
+            Terms
+          </Typography>
+        </NavLink>
+        <NavLink
+          style={{ textDecoration: "none", color: DARK_GREEN_COLOR }}
+          to="/privacy-politics"
+        >
+          <Typography textAlign="left" fontWeight="bold">
+            Politics
+          </Typography>
+        </NavLink>
         <GreenButton
           color="inherit"
           variant="contained"

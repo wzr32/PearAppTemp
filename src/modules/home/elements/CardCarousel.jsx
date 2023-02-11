@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 
 const CardCarousel = () => {
   return (
-    <Card sx={{ margin: "0 1em", borderRadius: "20px" }}>
+    <Card sx={{ margin: { xs: "0", md: "0 1em" }, borderRadius: "20px" }}>
       <CardContent>
         <Box
           sx={{
