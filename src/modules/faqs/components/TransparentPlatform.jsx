@@ -10,7 +10,7 @@ import {
 
 const TransparentPlataform = () => {
   return (
-    <Box component="section" sx={{ margin: "4rem" }}>
+    <Box component="section" sx={{ margin: "2rem 0" }}>
       <Container>
         <Grid container spacing={2} alignItems="center">
           <Grid item xs={12} md={4}>

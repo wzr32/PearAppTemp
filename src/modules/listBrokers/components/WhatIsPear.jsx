@@ -24,7 +24,13 @@ const WhatIsPear = () => {
           </Typography>
         </Grid>
         <Grid item md={4}>
-          <img src={SVGPhones} alt="Phones" />
+        <Box sx={{ width: "100%", height: "100%" }}>
+              <img
+                src={SVGPhones}
+                alt="Phones"
+                className="landing-herobanner__image"
+              />
+            </Box>
         </Grid>
       </Grid>
     </Box>

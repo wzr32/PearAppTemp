@@ -19,7 +19,7 @@ const CountryResidence = () => {
           margin={"1.5rem 0"}
           fontWeight="bold"
         >
-          I would like to find a/an:
+          Please provide us your country of residence
         </Typography>
         <FormControl fullWidth>
           <Select
@@ -27,9 +27,7 @@ const CountryResidence = () => {
             id="demo-simple-select"
             label=""
           >
-            <MenuItem value={10}>Ten</MenuItem>
-            <MenuItem value={20}>Twenty</MenuItem>
-            <MenuItem value={30}>Thirty</MenuItem>
+            <MenuItem value={10}>United Kingdom</MenuItem>
           </Select>
         </FormControl>
       </Container>

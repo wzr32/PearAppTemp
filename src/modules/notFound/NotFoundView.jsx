@@ -8,12 +8,18 @@ const NotFoundView = () => {
   return (
     <Container>
       <Box component="section" sx={{ margin: "6rem 0 6rem 0" }}>
-        <Grid container spacing={32} alignItems="center">
-          <Grid item md={4}>
-            <Box sx={{ width: "100%", height: "100%" }}>
-              <img src={NotFound} alt="NotFound" />
-            </Box>
+
+        <Grid container spacing={2} alignItems="center">
+          <Grid item sx={12} md={4}>
+          <Box sx={{ width: "100%", height: "100%" }}>
+                <img
+                  src={NotFound}
+                  alt="NotFound"
+                  className="landing-herobanner__image"
+                />
+              </Box>
           </Grid>
+
           <Grid item md={8}>
             <Typography variant="h3" fontWeight="bold" textAlign="center" color={DARK_GREEN_COLOR} maxWidth="480px" margin={"0 auto .5rem auto"}>Page not Found</Typography>
             <Typography variant="body1" maxWidth="520px" component="span" display="flex" justifyContent="center" textAlign="center" margin={"1rem auto 0 auto"} >
@@ -24,6 +30,7 @@ const NotFoundView = () => {
             </Box>
           </Grid>
         </Grid>
+
       </Box>
     </Container>
   );

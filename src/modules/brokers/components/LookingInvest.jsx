@@ -23,9 +23,10 @@ const LookingInvest = () => {
         </Typography>
         <FormControl fullWidth>
           <Select>
-            <MenuItem value={10}>Ten</MenuItem>
-            <MenuItem value={20}>Twenty</MenuItem>
-            <MenuItem value={30}>Thirty</MenuItem>
+            <MenuItem value={10}>In your own name</MenuItem>
+            <MenuItem value={20}>Via join an account</MenuItem>
+            <MenuItem value={30}>Via a private limited company</MenuItem>
+            <MenuItem value={40}>Of behalf of someone else</MenuItem>
           </Select>
         </FormControl>
       </Container>

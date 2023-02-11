@@ -21,7 +21,7 @@ const Unleash = () => {
         </Typography>
 
         <Box>
-          <Grid container justifyContent="space-between">
+          <Grid container rowGap={4} justifyContent="space-between">
             <Grid item xs={12} md={4}>
               <Typography variant='h3' fontWeight="bold" color={LIGHT_GREEN_COLOR}>400+</Typography>
               <Typography fontWeight="bold" color={MEDIUM_GREEN_COLOR}>Projects completed</Typography>

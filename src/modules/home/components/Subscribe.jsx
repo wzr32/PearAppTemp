@@ -11,10 +11,11 @@ import { NavLink } from "react-router-dom";
 
 const Subscribe = () => {
   return (
-    <Box component="section" sx={{ minHeight: "100vh" }}>
+    <Box component="section" sx={{ margin: "8rem 0 4rem 0" }}>
       <Container>
-        <Grid container spacing={4} alignItems="center">
-          <Grid item md={7}>
+
+        <Grid container rowGap={4} spacing={2} alignItems="center">
+          <Grid item md={8}>
             <Typography
               variant="h4"
               fontWeight="bold"
@@ -84,8 +85,14 @@ const Subscribe = () => {
               </Grid>
             </Box>
           </Grid>
-          <Grid item md={4}>
-            <img src={SVGPhones} alt="about_hand" />
+          <Grid item xs={12} md={4}>
+            <Box sx={{ width: "100%", height: "100%" }}>
+                <img
+                  src={SVGPhones}
+                  alt="phones"
+                  className="landing-herobanner__image"
+                />
+              </Box>
           </Grid>
         </Grid>
       </Container>

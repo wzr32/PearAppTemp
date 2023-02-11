@@ -170,8 +170,14 @@ const StartForm = () => {
                 <GreenButton type="submit">Get Started</GreenButton>
               </Grid>
             </Grid>
-            <Grid item xs={12} md={5}>
-              <img src={SVGLanding} alt="Phones" />
+            <Grid item md={5}>
+            <Box sx={{ width: "100%", height: "100%" }}>
+              <img
+                src={SVGLanding}
+                alt="phones"
+                className="landing-herobanner__image"
+              />
+            </Box>
             </Grid>
           </Grid>
         </form>
