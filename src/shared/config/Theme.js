@@ -1,9 +1,9 @@
-import { createTheme } from '@mui/material';
+import { createTheme, responsiveFontSizes } from '@mui/material';
 
-export const customTheme = createTheme({
+export const customTheme = responsiveFontSizes ( createTheme({
   typography: {
     fontFamily: [
       'Montserrat',
     ].join(','),
   },
-});
+}) );

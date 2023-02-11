@@ -70,7 +70,12 @@ const PlatformSelect = () => {
         <Box
           sx={{ display: "flex", justifyContent: "center", marginTop: "70px" }}
         >
-          <GreenButton component={NavLink} to="/brokers">
+          <GreenButton
+            component={NavLink}
+            to="/brokers"
+            size="large"
+            sx={{ padding: "20px 100px" }}
+          >
             Next
           </GreenButton>
         </Box>
